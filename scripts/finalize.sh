@@ -151,6 +151,10 @@ else
     echo "flux_log_sha256:   $FLUX_SHA"
     echo "checked_at_utc:    $(date -u +%Y-%m-%dT%H:%M:%SZ)"
   } > "$INTENT"
+  # Durable before signing (power loss): the intent and the frozen logs it hashes, the attempt directory and
+  # its parent. finalize-tx.json binds itself to the intent by sha256.
+  sync -- "$A/mainnet-suite.log" "$A/flux-mainnet-check.log" "$INTENT" "$A" "$ATTEMPTS" \
+    || { echo "ERROR: could not sync the intent and frozen logs of $A; not signing" >&2; exit 1; }
   echo "Evidence frozen before signing: $INTENT"
 
   cat <<INFO
