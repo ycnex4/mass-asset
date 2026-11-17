@@ -1,11 +1,31 @@
 # Mass Asset
 
-An on-chain asset standard for X1 (SVM) — **format 2** (Mass Asset v1).
+An on-chain asset standard for X1 (SVM) — **format 2** (Mass Asset v1), released as v1.0.
 
-> **Status: pre-release.** The specification is a published draft and the program runs as a preview on
-> X1 testnet. It is **not yet deployed on mainnet**; the program id is published with the v1.0 release.
-> Format 1 (`MAssPQXuBXvvf196oXKFZ1GiC9kTsJJ8podQV3m72Wv`, immutable, superseded) lives in the archived
-> repository [`ycnex4/mass-asset-format1`](https://github.com/ycnex4/mass-asset-format1).
+## Deployment (v1.0)
+
+| | |
+|---|---|
+| Program id (X1 mainnet) | **`MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp`** |
+| Status | **immutable** — upgrade authority removed (tx `5pXc2hBW1f7TEhgN8bJkqQMyapwGkBrCWTDymkeX5yJm2m7gRRPgcAx2kQiUhNoqNtVpYtDcu4ojzvcHBfupXAYe`, slot 93867662) |
+| ProgramData | `337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na`, deployed in slot 93853701 |
+| Executable hash | `88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c` |
+| Source | commit `d209d04` (tag `v1.0.0-rc1`), built with `solana-verifiable-build@sha256:0b4e3716…bdd68` |
+| Evidence | [`evidence/`](evidence/) — build record, candidate, testnet and mainnet suite logs, FLUX check, finalization |
+
+Reproduce the build and compare it with the deployed program:
+
+```bash
+solana-verify verify-from-repo -u https://rpc.mainnet.x1.xyz --program-id MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp \
+  https://github.com/ycnex4/mass-asset --commit-hash d209d04fbc80c172ad8413c3cbcbf904949e52e8 \
+  --library-name mass_asset_v1 --mount-path programs/mass-asset-v1 \
+  --base-image solanafoundation/solana-verifiable-build@sha256:0b4e3716fad9ca4b4aac3e3f977f43aad93a18c22296c0c0f44fc22e644bdd68
+```
+
+**Format 1 is not compatible.** Format 1 (`MAssPQXuBXvvf196oXKFZ1GiC9kTsJJ8podQV3m72Wv`, immutable, superseded)
+is a different program with a different account layout; its assets are not format 2 assets. Its code lives
+in the archived repository [`ycnex4/mass-asset-format1`](https://github.com/ycnex4/mass-asset-format1).
+An integrator identifies a format by the pair (account owner program id, `version`).
 
 ## What it is
 
@@ -21,7 +41,7 @@ An on-chain asset standard for X1 (SVM) — **format 2** (Mass Asset v1).
   encodings in the specification).
 
 The rules, layout, check order and error codes are in the specification:
-[`docs/spec/v1-format2-draft.md`](docs/spec/v1-format2-draft.md).
+[`docs/spec/v1-format2-draft.md`](docs/spec/v1-format2-draft.md) (v1.0).
 
 ## Repository
 
