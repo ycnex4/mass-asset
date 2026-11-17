@@ -1,0 +1,15 @@
+program_id:         MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp
+network:            X1 mainnet
+genesis:            4SvBP3omtvcCVWdxq1zBY5cDp4wndjsThb6nEMn6iMdN
+rpc:                https://rpc.mainnet.x1.xyz
+status:             candidate (upgradeable)
+deployment:         programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na slot=93853701 authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+programdata:        337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na
+deployed_slot:      93853701
+upgrade_authority:  6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+executable_hash:    88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c
+source_repo:        https://github.com/ycnex4/mass-asset
+source_commit:      d209d04fbc80c172ad8413c3cbcbf904949e52e8
+build_image:        solanafoundation/solana-verifiable-build@sha256:0b4e3716fad9ca4b4aac3e3f977f43aad93a18c22296c0c0f44fc22e644bdd68
+testnet_log_sha256: 5cfec5c4a4fbd9dd2ebbe1eb5329cbfcea4b61bc8c79b04274640f1a763244ee   (build/candidate-testnet-suite.log, hashed before checking)
+deployed_at_utc:    2026-11-17T06:45:21Z

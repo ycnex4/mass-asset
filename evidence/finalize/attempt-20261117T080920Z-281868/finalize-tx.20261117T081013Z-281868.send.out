@@ -1,0 +1,2 @@
+FINALIZE_TX SIGNED signature=5pXc2hBW1f7TEhgN8bJkqQMyapwGkBrCWTDymkeX5yJm2m7gRRPgcAx2kQiUhNoqNtVpYtDcu4ojzvcHBfupXAYe (recorded in /home/sergey/mass-asset-release-rc1/build/finalize/attempt-20261117T080920Z-281868/finalize-tx.json before sending)
+FINALIZE_TX OK signature=5pXc2hBW1f7TEhgN8bJkqQMyapwGkBrCWTDymkeX5yJm2m7gRRPgcAx2kQiUhNoqNtVpYtDcu4ojzvcHBfupXAYe slot=93867662 status=finalized err=null instruction=SetAuthority(None) programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952

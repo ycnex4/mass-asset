@@ -1,0 +1,10 @@
+program_id:        MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp
+genesis:           4SvBP3omtvcCVWdxq1zBY5cDp4wndjsThb6nEMn6iMdN
+deployment:        programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na slot=93853701 authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+candidate_sha256:  77631bb228c8c1836e7046854d5c0b7c01304caf7278ff8b792f20bd1d933229
+snapshot_context:  93867482
+executable_hash:   88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c
+source_commit:     d209d04fbc80c172ad8413c3cbcbf904949e52e8
+suite_log_sha256:  d5e8c9b1d99833000d905abf95374d7b3e273140b163050c4fc4e489fca7ea80
+flux_log_sha256:   bb998e320b9b3d8836d64161bac756e602caf109e90db1a1c32e2cd041b636f1
+checked_at_utc:    2026-11-17T08:09:21Z
