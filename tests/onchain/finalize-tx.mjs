@@ -151,9 +151,23 @@ if (mode === "send") {
     programdata: programData.toBase58(), authority: wallet.publicKey.toBase58(), program: programId.toBase58(),
     intent_sha256: intentSha,
     created_at_utc: new Date().toISOString() };
-  const fd = fs.openSync(recPath, "wx");
-  fs.writeSync(fd, JSON.stringify(rec, null, 2) + "\n"); fs.fsyncSync(fd); fs.closeSync(fd);
-  const dfd = fs.openSync(path.dirname(recPath), "r"); fs.fsyncSync(dfd); fs.closeSync(dfd); // the directory entry too
+  // The record must be complete and durable BEFORE the transaction is sent: exclusive create, a write loop
+  // until every byte is written (write(2) may write fewer), fsync of the file, of its directory and of that
+  // directory's parent (the attempt directory is new), then a read-back that must equal what was written.
+  const text = Buffer.from(JSON.stringify(rec, null, 2) + "\n", "utf8");
+  const fd = fs.openSync(recPath, "wx", 0o600);
+  try {
+    for (let off = 0; off < text.length;) {
+      const n = fs.writeSync(fd, text, off, text.length - off);
+      if (!(n > 0)) throw new Error(`short write of ${recPath} (${off} of ${text.length} bytes)`);
+      off += n;
+    }
+    fs.fsyncSync(fd);
+  } finally { fs.closeSync(fd); }
+  for (const dir of [path.dirname(recPath), path.dirname(path.dirname(recPath))]) {
+    const dfd = fs.openSync(dir, "r"); try { fs.fsyncSync(dfd); } finally { fs.closeSync(dfd); }
+  }
+  if (!fs.readFileSync(recPath).equals(text)) throw new Error(`${recPath} does not read back as written; not sending`);
   console.log(`FINALIZE_TX SIGNED signature=${signature} (recorded in ${recPath} before sending)`);
   try {
     await connection.sendRawTransaction(tx.serialize(), { skipPreflight: false, preflightCommitment: "finalized", maxRetries: 10 });
