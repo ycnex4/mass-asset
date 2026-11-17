@@ -22,6 +22,9 @@ solana-verify verify-from-repo -u https://rpc.mainnet.x1.xyz --program-id MAssXt
   --base-image solanafoundation/solana-verifiable-build@sha256:0b4e3716fad9ca4b4aac3e3f977f43aad93a18c22296c0c0f44fc22e644bdd68
 ```
 
+Run by the operator on 2026-11-17 after finalization: the repository build and the on-chain program both
+give `88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c` — **Program hash matches**.
+
 ## What was checked before finalization
 
 - conformance suite on X1 testnet against this exact bytecode, and on X1 mainnet against the candidate;
