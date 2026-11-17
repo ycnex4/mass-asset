@@ -1,0 +1,13 @@
+target/
+node_modules/
+.env
+.env.*
+*keypair*.json
+*wallet*.json
+*.state.json
+*.log
+build/
+.keys/
+finalize-rehearsal/
+# release evidence is committed (RELEASE.md, step 8)
+!evidence/**
