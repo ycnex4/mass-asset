@@ -1,0 +1,442 @@
+
+=== MASS ASSET v1 (format 2) — ON-CHAIN CONFORMANCE SUITE ===
+Run: 20261117T062919Z-41debf46d3b2552f
+Repo:   /home/sergey/mass-asset-release-rc1
+Commit: d209d04
+RPC:    https://rpc.testnet.x1.xyz
+Log:    /home/sergey/mass-asset-release-rc1/tests/onchain/onchain.log
+Genesis: C7ucgdDEhxLTpXHhWSZxavSVmaNTUJWwT5iTdeaviDho
+Network: X1 testnet (pinned genesis)
+[0/8] Host unit tests (Mass Asset)...
+
+running 35 tests
+...................................
+test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+[1/8] Testing the deployed Mass Asset program CjbH76UhFC1BWCZEdnGGPK3XmV7n5xjKgzPDQ4FStD6R (no build/deploy/close)
+
+Program Id: CjbH76UhFC1BWCZEdnGGPK3XmV7n5xjKgzPDQ4FStD6R
+Owner: BPFLoaderUpgradeab1e11111111111111111111111
+ProgramData Address: FkctNxnae7atV6U2XsjYFptcSArSyVyXzyRmRHMhBMf9
+Authority: DTfvjtRL63u3XYHXQfgRQCdhEanUK1qqawvfEAM9hxAc
+Last Deployed In Slot: 203102823
+Data Length: 53896 (0xd288) bytes
+Balance: 0.37632024 SOL
+
+Deployment before: programdata=FkctNxnae7atV6U2XsjYFptcSArSyVyXzyRmRHMhBMf9 slot=203102823 authority=DTfvjtRL63u3XYHXQfgRQCdhEanUK1qqawvfEAM9hxAc
+Bytecode: on-chain 88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c (finalized snapshot)
+          local    88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c (programs/mass-asset-v1/target/deploy/mass_asset_v1.so, sha256 9e2a686fb70c945de153719be6a56f92b6cb4eb1cb616da5a5415f1f04167faa)
+Bytecode: MATCH
+[2/8] Building test issuer...
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling unicode-ident v1.0.27
+   Compiling serde_core v1.0.229
+   Compiling equivalent v1.0.3
+   Compiling hashbrown v0.17.1
+   Compiling winnow v1.0.5
+   Compiling serde v1.0.229
+   Compiling toml_datetime v1.1.3+spec-1.1.0
+   Compiling cfg_aliases v0.2.2
+   Compiling once_cell v1.21.4
+   Compiling five8_core v1.0.0
+   Compiling borsh v1.8.1
+   Compiling solana-sanitize v3.0.1
+   Compiling five8 v1.0.0
+   Compiling solana-atomic-u64 v3.0.1
+   Compiling bytemuck v1.25.2
+   Compiling solana-define-syscall v4.0.1
+   Compiling solana-define-syscall v5.4.0
+   Compiling five8_const v1.0.0
+   Compiling sha2-const-stable v0.1.0
+   Compiling autocfg v1.5.1
+   Compiling bs58 v0.5.1
+   Compiling solana-program-memory v3.1.0
+   Compiling feature-probe v0.1.1
+   Compiling thiserror v2.0.21
+   Compiling log v0.4.35
+   Compiling lazy_static v1.5.1
+   Compiling bv v0.11.1
+   Compiling solana-define-syscall v3.0.0
+   Compiling solana-msg v3.1.0
+   Compiling solana-native-token v3.0.0
+   Compiling solana-big-mod-exp v3.0.0
+   Compiling solana-program-option v3.1.0
+   Compiling num-traits v0.2.19
+   Compiling memoffset v0.9.1
+   Compiling indexmap v2.14.2
+   Compiling syn v3.0.10
+   Compiling syn v2.0.119
+   Compiling toml_parser v1.1.5+spec-1.1.0
+   Compiling toml_edit v0.25.19+spec-1.1.0
+   Compiling proc-macro-crate v3.5.0
+   Compiling solana-short-vec v3.3.0
+   Compiling solana-sdk-macro v3.0.1
+   Compiling serde_derive v1.0.229
+   Compiling borsh-derive v1.8.1
+   Compiling bytemuck_derive v1.12.1
+   Compiling thiserror-impl v2.0.21
+   Compiling solana-secp256k1-recover v3.3.1
+   Compiling solana-borsh v3.0.2
+   Compiling solana-hash v4.7.0
+   Compiling solana-program-error v3.0.1
+   Compiling bincode v1.3.3
+   Compiling solana-fee-calculator v3.4.0
+   Compiling solana-serde-varint v3.0.1
+   Compiling solana-instruction-error v2.5.0
+   Compiling solana-program-pack v3.1.0
+   Compiling solana-sha256-hasher v3.1.0
+   Compiling solana-keccak-hasher v3.1.0
+   Compiling solana-blake3-hasher v3.1.0
+   Compiling solana-hash v3.1.0
+   Compiling solana-address v2.9.0
+   Compiling solana-sdk-ids v3.1.0
+   Compiling solana-pubkey v4.4.0
+   Compiling solana-get-sysvar v1.0.0
+   Compiling solana-address v1.1.0
+   Compiling solana-serialize-utils v3.1.2
+   Compiling solana-pubkey v3.0.0
+   Compiling solana-epoch-stake v3.0.1
+   Compiling solana-sysvar-id v3.1.0
+   Compiling solana-clock v4.0.0
+   Compiling solana-slot-hashes v3.2.0
+   Compiling solana-epoch-schedule v3.4.0
+   Compiling solana-rent v3.1.0
+   Compiling solana-epoch-rewards v3.2.0
+   Compiling solana-last-restart-slot v3.2.0
+   Compiling solana-clock v3.2.1
+   Compiling solana-instruction v4.0.0
+   Compiling solana-account-info v3.1.1
+   Compiling solana-program-entrypoint v3.1.1
+   Compiling solana-instruction v3.5.1
+   Compiling solana-stable-layout v3.0.1
+   Compiling solana-instructions-sysvar v3.0.1
+   Compiling solana-cpi v3.1.0
+   Compiling solana-slot-history v3.2.0
+   Compiling solana-sysvar v3.1.1
+   Compiling solana-program v3.0.0
+   Compiling mass-asset-test-issuer v0.1.0 (/home/sergey/mass-asset-release-rc1/tests/onchain/test-issuer)
+    Finished `release` profile [optimized] target(s) in 11.61s
+[3/8] Fresh program keypairs...
+authority bump: issuer A=255 issuer B=253
+Mass Asset v1:  CjbH76UhFC1BWCZEdnGGPK3XmV7n5xjKgzPDQ4FStD6R
+Test issuer A:  GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev
+Test issuer B:  9uf7V4FbVFqWMoXkV5zbjd6T1f9d29huAZfkLmoarzsZ
+Wallet: DTfvjtRL63u3XYHXQfgRQCdhEanUK1qqawvfEAM9hxAc
+Balance: 8809734353 lamports, needed (deploy rent + 0.06 XNT margin): 263657200 lamports
+[ENV] loader-v4 related feature gates on this cluster:
+2Fr57nzzkLYXW695UdDxDeR5fhnZWSttZeZYemrnpGFV | inactive                | NA              | SIMD-0140: Migrate Config program to Core BPF
+2aQJYqER2aKyb3cZw22v4SL2xMX7vwXBRWfvS4pTrtED | inactive                | NA              | SIMD-0167: Enable Loader-v4
+4eohviozzEeivk1y9UbrnekbAFMDQyJz5JjA9Y6gyvky | inactive                | NA              | SIMD-0089: Migrate Feature Gate program to Core BPF (programify)
+6M4oQ6eXneVhtLoiAr4yRYQY43eVLjrKbiDZDJc892yk | inactive                | NA              | SIMD-0196: Migrate Stake program to Core BPF #3655
+C97eKZygrkU4JxJsZdjgbUY7iQR7rKTr4NyDWo2E5pRm | inactive                | NA              | SIMD-0128: Migrate Address Lookup Table program to Core BPF
+EQUMpNFr7Nacb1sva56xn1aLfBxppEoSBH8RRVdkcD1x | inactive                | NA              | Disable account loader special case #3513
+Gx4XFcrVMt4HUvPzTpTSVkdDVgcDSjKhDN1RqRS6KDuZ | inactive                | NA              | SIMD-0185: Vote State v4
+ptokFjwyJtrwCa9Kgo9xoDS59V4QccBGEaRFnRPnSdP  | inactive                | NA              | SIMD-0266: Efficient Token program
+rexav5eNTUSNT1K2N7cfRjnthwhcP5BC25v2tA4rW4h  | inactive                | NA              | SIMD-0444: Relax program data account check in migration
+[4/8] Deploying Mass Asset, issuer A, issuer B...
+Program Id: GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev
+
+Signature: YB4zCERxm46C6GDtsGK4Uc1SseUoa9kMonCYJEjwCNjBpDmBAvnswZ49QvMBop76rFfq8R7Xs1RpWdeWWeTqjhK
+
+Program Id: 9uf7V4FbVFqWMoXkV5zbjd6T1f9d29huAZfkLmoarzsZ
+
+Signature: 2kXPSfXjyP5Dteb1C3U78pikBG4cPSqrTCwEeU7U4UxBxFWnyd66KJLkGS4XUnLb9cnDPFGZNiCTdL9x25Leo29u
+
+[5/8] Phase LIVE...
+======================================================
+ MASS ASSET v1 — ON-CHAIN SUITE — phase live
+======================================================
+Mass Asset:  CjbH76UhFC1BWCZEdnGGPK3XmV7n5xjKgzPDQ4FStD6R
+Issuer:      GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev
+Authority:   GKWVX3CWwogvsvbjk75j56PHw42wf1WEqHWZMSDtjwJT
+ProgramData: 5PkZ4L7aTPMpXj4UDaUjpChgTYCHGqsHcWFiyTsstaLu
+ENV LoaderV4 account: exists, executable=true, owner=NativeLoader1111111111111111111111111111111
+Alice: FHCtQuCwhw7b2KWQupjUkHNuqXB3Zh9CyzQqkQprxqh5
+Bob:   DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw
+
+=== POSITIVE CHECKS ===
+  tx P1 create (empty address): 4L9SXVFNgKKZGM9MzgRzddtnCfi4PYP6wdbVAF51sSTAXxJnypRPCRxsrMGyLLAZfb4PCFSA85GtzPUgnTEUX3rc fee=401500 CU=18356 massCU=11299
+PASS  P1 create empty  size=152 lamports=1422400 authority_bump=255 (expected 255)
+PASS  E1 Create event  tag=0 segments=7
+  tx P2a pre-fund address (System shell): 3kGrZb8WRrPHgLkNVSFcfWj9ZGNaYnR4h2LNRSdyqDLFUTsLr74NYUp4Hc7LYSgs9CJ7xrVRKiq2MmX3V6MunaFh fee=3000 CU=300 massCU=null
+  tx P2b create (pre-funded shell): A2esYaJWzmuGbfAgVHfmS1r7nWmJojCtrpaRCrtmM7jiQquAKo6Tiuwk6zVM3xhdRgzZ3i7JXioWKee9kFqZ5cJ fee=401500 CU=18592 massCU=11535
+PASS  P2 create pre-funded  lamports=1259840 (shell had 650240)
+  tx P3 write_payload: 44wwFYTh6ZHNADryBwdSaN7RouZTmcf53grmRnzPAq8CcU6FyFGRqhHoT95QvSyW86TUx2DTuThzNpY9ug76v75x fee=401500 CU=9068 massCU=3246
+PASS  E2 WritePayload event  tag=2 segments=5
+PASS  P3 write_payload  payload[0..12]=TESTABCDEFGH headerUnchanged=true
+  tx P4 transfer owner-mode alice->bob: 5WdVDZBZPFtYafB7oc9d6T7xqTSQACzkGzmLFcRi3c9yAuXv5GnpRLjMWKwLL9NU3UdzfsUT2Z9U89tTrCkuRfxa fee=401500 CU=3534 massCU=3384
+PASS  P4 transfer owner-mode  owner=DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw
+PASS  E3 Transfer event (by owner)  tag=1 segments=6
+  tx P5 transfer namespace-mode: 3ebaqmaTHpTk3PegEC64FB3Y5H4sdBWQd3g22WomfpDChndDZ6wMEwFrcGuMiicwFdjuUzbsWeWWs5DLfzWZJe4d fee=401500 CU=10732 massCU=4910
+PASS  E4 Transfer event (by authority)  tag=1 segments=6
+PASS  P5 transfer namespace-mode  owner=DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw
+  tx U-ref write_payload (namespace mode): NmzfBA1N5a3WE8S6K9Yy8LqzLNJQPcPKWgXcdJigkuL9MyQsT7ASSgu6amED8XpZsEo1JfjAmLREhCRHx5JdjUN fee=401500 CU=9077 massCU=3255
+  tx P6 create frozen: 2Kyv2yfAmFCrf3L7rWFAKSRBn7GjVTEusWuuYSSyTTcsFczSZe1VTMJyyn5yEXUAKL4imTG6c4eiPHjCxQNEhTXh fee=401500 CU=18356 massCU=11299
+PASS  P6 create frozen  size=104
+
+=== NEGATIVE CHECKS (simulated) ===
+PASS  N1 create direct, authority not signer  expected InvalidAuthority, got InvalidAuthority
+PASS  N2 create via issuer under foreign namespace  expected InvalidAuthority, got InvalidAuthority
+PASS  N3 create wrong object address  expected InvalidObjectAddress, got InvalidObjectAddress
+PASS  N4a create transfer_mode=3  expected InvalidFlags, got InvalidFlags
+PASS  N4b create reserved flag bit  expected InvalidFlags, got InvalidFlags
+PASS  N5 create payload_len 1025  expected InvalidAccountSize, got InvalidAccountSize
+PASS  N6 create owner = default  expected InvalidOwner, got InvalidOwner
+PASS  N7 create on live asset address  expected ObjectAddressInUse, got ObjectAddressInUse
+PASS  N8 transfer owner-mode by issuer authority  expected InvalidAuthority, got InvalidAuthority
+PASS  N9 transfer by former owner (alice)  expected InvalidAuthority, got InvalidAuthority
+PASS  N10 transfer frozen asset  expected TransferDisabled, got TransferDisabled
+PASS  N11 transfer to default pubkey  expected InvalidOwner, got InvalidOwner
+PASS  N12 namespace-mode transfer by owner  expected InvalidAuthority, got InvalidAuthority
+PASS  N13 write_payload by owner (not authority)  expected InvalidAuthority, got InvalidAuthority
+PASS  N14 write_payload out of bounds  expected PayloadOutOfBounds, got PayloadOutOfBounds
+PASS  N15 consume with wrong refund account  expected RefundMismatch, got RefundMismatch
+PASS  N16 consume by owner directly  expected InvalidAuthority, got InvalidAuthority
+PASS  N17 orphan_close while issuer alive  expected NamespaceAlive, got NamespaceAlive
+PASS  N18 orphan_close with fake ProgramData  expected NamespaceAlive, got NamespaceAlive
+PASS  N19 orphan_close by non-owner  expected InvalidAuthority, got InvalidAuthority
+PASS  N21 transfer to the asset's own address  expected InvalidOwner, got InvalidOwner
+PASS  N22 create with owner = object address  expected InvalidOwner, got InvalidOwner
+PASS  N23 create with object = authority  expected DuplicateAccount, got DuplicateAccount
+PASS  N24 create with underfunded payer  expected InsufficientFunds, got InsufficientFunds
+PASS  N25 consume with read-only owner account  expected AccountNotWritable, got AccountNotWritable
+PASS  N26 orphan_close with wrong namespace  expected NamespaceMismatch, got NamespaceMismatch
+PASS  N27 unknown instruction tag  expected InvalidInstruction, got InvalidInstruction
+PASS  N28 write_payload empty at offset == payload_len (no-op)  simulation succeeded
+PASS  N29 create with owner = Mass Asset program  expected InvalidOwner, got InvalidOwner
+PASS  N30 create with owner = issuer program  expected InvalidOwner, got InvalidOwner
+PASS  N31 transfer to Mass Asset program  expected InvalidOwner, got InvalidOwner
+PASS  N32 transfer to issuer program  expected InvalidOwner, got InvalidOwner
+PASS  N33 create with owner = issuer authority PDA  expected InvalidOwner, got InvalidOwner
+PASS  N34 transfer to issuer authority PDA  expected InvalidOwner, got InvalidOwner
+
+=== PAYER = AUTHORITY (authority PDA pre-funded) ===
+  tx pre-fund authority PDA: wJ2hDXWgwCtGRuLTb5FCamZD4wHu859p3EKEQm77LyVyLA9NxDAE4Qmurbo4a9qCC2LCNkgbt4mR7XFnhdHJswZ fee=3000 CU=300 massCU=null
+PASS  N35 create with payer = authority PDA (funded)  expected DuplicateAccount, got DuplicateAccount
+PASS  N36 create with payer = issuer program  expected DuplicateAccount, got DuplicateAccount
+  tx cleanup: sweep authority PDA: 2SFvyCgdWVxtVdqUsx8QtPEZDwZTRwvvRx9MpPxUDAmJtC3wYNkhGuN18XgHB7mKJZV6FVwyZ2JDacrof7R1vbeQ fee=201500 CU=5958 massCU=null
+  authority PDA balance: before=1950720 after=0 (sweep ok)
+
+=== DELEGATE ===
+  tx create oD (owner mode, owner alice): 33KvnEX29S7iawrVJT5kSX2Vs5Fywx9KjaZGNG3ujGAX1FqyzEWw4AXTvjQFdhkn9ZuzDwE9z46Y72cTKdTCTxB8 fee=401500 CU=15356 massCU=8299
+PASS  N37 approve by non-owner  expected InvalidAuthority, got InvalidAuthority
+PASS  N38 approve delegate = owner  expected InvalidDelegate, got InvalidDelegate
+PASS  N39 approve delegate = issuer authority PDA  expected InvalidDelegate, got InvalidDelegate
+PASS  N40 approve delegate = default  expected InvalidDelegate, got InvalidDelegate
+PASS  N41 approve delegate = issuer program  expected InvalidDelegate, got InvalidDelegate
+PASS  N42 approve delegate = Mass Asset program  expected InvalidDelegate, got InvalidDelegate
+PASS  N43 approve on namespace-mode asset  expected DelegationNotAllowed, got DelegationNotAllowed
+  tx P12 approve alice -> delegate dave: vb3VRHQ5iyjeHFF5i48WWEwyoXXCkBoDCsKQKuZnNZL8MsZxdKQWj13WXRi2hKNiZFGzQczTP3fAWx1pVenaVaC fee=401500 CU=3423 massCU=3273
+PASS  P12 approve sets delegate  delegate=Hx3Y9fqSKqobqjiPFPX684q8NCn4TJKpzKUiwv57UTp8
+PASS  E7 Approve event  tag=4 segments=5
+PASS  N44 write_payload by delegate  expected InvalidAuthority, got InvalidAuthority
+PASS  N45 consume by delegate  expected InvalidAuthority, got InvalidAuthority
+PASS  N46 orphan_close by delegate  expected InvalidAuthority, got InvalidAuthority
+PASS  N47 transfer by stranger while delegate set  expected InvalidAuthority, got InvalidAuthority
+  tx P13 transfer by delegate dave -> bob: TKaqd3wzKaarEXBk2D5SpdS6etNqnHUznTGTNDZrCeYkHJ4CrDB3qJeKVGrfi5YqERhU9Ek9d7jj8UNzjKB2ZoK fee=401500 CU=3537 massCU=3387
+PASS  P13 delegate transfer clears delegate  owner=DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw delegate=11111111111111111111111111111111
+PASS  E8 Transfer event (by delegate)  tag=1 segments=6
+PASS  N48 former delegate cannot transfer again  expected InvalidAuthority, got InvalidAuthority
+  tx approve bob -> dave: 5MQttvUETY4qBHeiZZbA1Ch3i9Y6GixPLS5Vac6yG9S8L3thDmz13RKehV6tn5fXouVTxVkQdTdTyu2D9GxjNjt fee=401500 CU=3423 massCU=3273
+  tx P14 revoke by delegate: 3xuFfHrddrUhd1MRu1SaFf9qTwiRrHQCoU4WcPPukhjKV8HBHtrZ8YFkDrMZ4TVfV9fcLzM2i6diXBCR4CNjCYTP fee=401500 CU=1824 massCU=1674
+PASS  P14 delegate revokes itself  delegate=11111111111111111111111111111111
+PASS  E9 Revoke event (by delegate)  tag=5 segments=5
+  tx approve bob -> dave (2): 33UCTVvCWTxp4484CZEGskF8oEm4fH193SAVnRq8PikyqDdRLaTGCYV3fcrYRD7pqTuG1ULgEm1kbe2iAs7wETn8 fee=401500 CU=3423 massCU=3273
+  tx P15 revoke by owner: 27TzmfpuzDjsvmBWmBo2zt5xGqZhrRUrXipvhzXxnsNE7Ho3dkd9y2KywoRyiywuvyyk63nXAjCDoaYCLSRH4Vbg fee=401500 CU=1821 massCU=1671
+PASS  P15 owner revokes  delegate=11111111111111111111111111111111
+PASS  E10 Revoke event (by owner)  tag=5 segments=5
+PASS  P16 revoke without delegate by owner (idempotent)  simulation succeeded
+PASS  N49 revoke by stranger  expected InvalidAuthority, got InvalidAuthority
+PASS  N50 revoked delegate cannot transfer  expected InvalidAuthority, got InvalidAuthority
+  tx approve bob -> dave (3): 61BzVYKQ71xWBZPAGXW1Mvmr7SqBVYwjYTgySqvVrTw6Vd84FLogp6mzp1aSsS1fcWCJPcms3P7TPGkGQaadYbbD fee=401500 CU=3423 massCU=3273
+  tx P17 owner transfer bob -> alice: 4kmGpJz4EmXtMJaRd1PtGwdPBMTjaQqy3qhHCFTyGpCtiFhWoXTQsjK6e1UyeK1s2Y86svn7HrnJUpRKGHfMq8gx fee=401500 CU=3534 massCU=3384
+PASS  P17 owner transfer clears delegate  owner=FHCtQuCwhw7b2KWQupjUkHNuqXB3Zh9CyzQqkQprxqh5 delegate=11111111111111111111111111111111
+
+=== ROLLBACK ===
+  tx P18 approve + failing instruction (landed with skipPreflight): 5dz6vYPrLtWS2sCT8pVT3QCvCK1qb2Nj6AyZG2HR2fh1v8fh8pvUV4uLxrUxtJ7XhZvmJ9Fiz6jDBgrccd5NCfH8 err={"InstructionError":[2,{"Custom":1}]} fee=402970
+PASS  P18 failed transaction changes nothing  landed=true err={"InstructionError":[2,{"Custom":1}]} delegate=11111111111111111111111111111111 eventsInLogs=1 (indexers must check meta.err)
+
+=== RESIZE ===
+  tx P19 resize 48 -> 64 (shortfall): fAaMjeAQK64ENzeCdnBtcDmVvDPGWNXfQQETte37fNoNzUrnqoXUvdMPJuS6mYtut7uiZMgfSTA3SwGDcx5oZNz fee=401500 CU=12909 massCU=6274
+PASS  P19 resize grows and tops up  size=168 lamports=1503680 expected=1503680 topup=81280 oldPayloadKept=true newBytesZero=true
+PASS  E11 Resize event (shortfall)  tag=6 segments=6
+  tx P20a send excess lamports to the asset: LvFXAFEazTc2oMeHGjWHa9vrxaST19AQAzpioSpv1J14oXt2cXQV3fmUNQB4CGTpXeaDTATLLsdG1ZSLkfBkndu fee=3000 CU=300 massCU=null
+  tx P20b resize 64 -> 72 (excess, no top-up): 25Wr5cv2NE9XoMevPAsZpwLvpfaaXcbfzKUfGW7yWeUcfgk8NfvymkPRcv92xerKQA1p66eRp8o7tFbQFty19Xpo fee=401500 CU=11224 massCU=4589
+PASS  P20 resize with excess keeps lamports  lamports before=2003680 after=2003680 walletDelta=-401500
+PASS  E12 Resize event (no top-up)  tag=6 segments=6
+  tx P21 resize 72 -> 1024 (maximum): 2Frp5TCRXjPPquc2TWNwNxxcHuT5QUcLWSkpusoVLJ6kT157Ve4JXK9nQQDvjntnTU9VH7YtRcHjnedLT6kTfTy5 fee=601500 CU=12909 massCU=6274
+PASS  P21 resize to MAX_PAYLOAD  size=1128
+PASS  N51 resize beyond MAX_PAYLOAD  expected InvalidAccountSize, got InvalidAccountSize
+PASS  N52 resize not growing (equal)  expected InvalidAccountSize, got InvalidAccountSize
+PASS  N53 resize by non-authority  expected InvalidAuthority, got InvalidAuthority
+PASS  N54 resize payer = authority  expected DuplicateAccount, got DuplicateAccount
+PASS  N55 resize with underfunded payer  expected InsufficientFunds, got InsufficientFunds
+PASS  N56 resize with wrong system program  expected InvalidSystemProgram, got InvalidSystemProgram
+PASS  N57 resize shrink  expected InvalidAccountSize, got InvalidAccountSize
+  tx approve alice -> dave (P24): 5Vfdmc7CnDdWrBHxBPxHxuziFsrKurKFDSLHqJJdEhm3RK4xgvV9QgGn4bnne6gHqvoxK65jMVtrcB4sA6PXCjEW fee=401500 CU=3423 massCU=3273
+  tx P24 transfer alice -> alice (same owner): 3zVTvbRkJj7PkuokhRRqTvvVVFncEmp2WnQGoLSL1k1Bb2NSfaxrWJQjZ8P6vosDcBoSsnDZca2XENvLvkmqfg4h fee=401500 CU=3534 massCU=3384
+PASS  P24 transfer to same owner clears delegate  owner=FHCtQuCwhw7b2KWQupjUkHNuqXB3Zh9CyzQqkQprxqh5 delegate=11111111111111111111111111111111
+PASS  E13 Transfer event (same owner)  tag=1 segments=6
+
+=== RESIZE WITH PDA PAYER (CPI) ===
+  tx fund test-payer PDA: 5k4LMCjjm21bRkDCBbrHDmdyRiKW91tG2isjgCbmJLvRemALHrpZw73EEuGGspsmyVJJsvSMVR9v5vGHzZBv1qhm fee=3000 CU=300 massCU=null
+  tx P23 resize o1 48 -> 64, payer = PDA via CPI: 5fmiHq7F6WAxFqhETDiuirRsRjhj5fR2gJaHupi2fN9j8DZgY2bivBTtGUbM41eJ8kBrB1rc9Aeb3xaKfieN8z29 fee=401500 CU=12925 massCU=6274
+PASS  P23 resize with PDA payer through CPI  size=168 pdaPaid=81280 oldPayloadKept=true
+  tx cleanup: sweep test-payer PDA: 3U5qh346VVxdrVDENnmTPfjmKqj2y2EoU6gJfAYBDFQy7AoSgxBnzvtbP3zmc7B2QhbdVyEW2BqQhLWqp8nNAYeo fee=201500 CU=5961 massCU=null
+  tx P22 consume resized asset -> alice: 4ScSeXd5vLCKBb4ALH54myyQxDkiGRjkH9wveycph1qFWC7mYxpjFTD4SEs7d5c2HZKroho8bNbWQ25MUQRotr5g fee=401500 CU=10036 massCU=3806
+PASS  P22 consume resized asset returns all lamports  delta=6380480 expected=6380480
+  tx U-ref create owner = wallet: 4te8o3r7k356cQaWB8es11Wbt22deR8scvqaV4HNbGEp1ChyjQtN4sQ6WrKQ8boFTyDdryFrPSAVUsJVjCi6hMFQ fee=401500 CU=15356 massCU=8299
+  tx U-ref consume -> wallet: 4ZwP7mL1AiZ3BuUxCJ9Pyie14pbpaydEHWujxRZayj4d3qpenbTfWWfGeypaEMFFKoZM5tcSqADJoVTw1xJVRd1X fee=401500 CU=10033 massCU=3814
+
+=== CONSUME ===
+  tx P7 consume o1 -> bob: 3NSmZVJgeFFAoq2yj5PKTctZLH1ys9Pb1fuUWMiatyCq8bAnBXorCueB2j425sVceGZRxs4vMBDPA85EshkeP3K6 fee=401500 CU=10032 massCU=3806
+PASS  P7 consume o1 -> bob  refund delta=1503680 expected=1503680 account=gone
+PASS  E5 Close event (consume)  tag=3 segments=6
+  tx P8 consume o2 -> bob: 5ikaicJNBWBFpMdy1Dn9CakxuXUSvf9nSCviZToeSLoNPbpewCCTvdqEfGq1QjX7LLGwoxu6HhX4uePbrBrdkd6y fee=401500 CU=10041 massCU=3815
+PASS  P8 consume o2 -> bob  refund delta=1259840 expected=1259840 account=gone
+  tx P9 consume frozen o3 -> alice: 4Lrx64oviRgXWNv2bKWz5k9xAmKwV5sE5zv7AzjAXybdGmVLBBjAAX93VDQPq2HWUpxt1z4X8RNMbt3QEUSSjbKs fee=401500 CU=10041 massCU=3815
+PASS  P9 consume frozen o3 -> alice  refund delta=1178560 expected=1178560 account=gone
+
+=== PREPARE ORPHAN PHASE ===
+  tx create o5 for orphan: 2a4HpQSVa3UMFWGR4wUBmFtmfbwCFT4xZPz3SMF3Po5tGTX7DoGegk7D1kZhc3FyjbakfuxBzkEZ3iT4kEBNdVYb fee=401500 CU=15356 massCU=8299
+  tx create o6 for orphan: 39GGmR6gsUNHHLaFqR3Z3EWQZBviuaAYthtU8FwfQxhoDcFGim2tXE2dGVvoXeMWbPP5EXr3meZHvE3RHaCAbSVk fee=401500 CU=15356 massCU=8299
+PASS  prepare orphan objects  o5=NsjK6bBqQeK1pHh7QbvpMRPVXtHPXtiJoRA3JaifhcE o6=5YFrKLp8ZPJnrdZUCPSycUtH6fBGw6pBXhKEDpUnirwh
+  tx sweep DRZmQ4: SxNKpv1GsEKcmypQ4QdbMn9wPk649zqaWADNYVkwq5BYRGhCukFscyyMBQhrwuJxS34Am4G6122UkxQV3tXBZto fee=3000 CU=300 massCU=null
+  tx sweep FHCtQu: 2At6cNcdoFQKFtHD2bvTWnKfg82EpCbVD6HmiF3Ezs5paeUmYitRsdZW4V8T3wunsTDe18xygbADPzbXA1iTZfJK fee=3000 CU=300 massCU=null
+Finalized: all 39 transactions of phase live
+
+=== SUMMARY phase live ===
+93/93 checks passed
+
+Metrics (fee lamports / CU consumed):
+  P1 create (empty address): fee=401500 CU=18356 massCU=11299
+  P2a pre-fund address (System shell): fee=3000 CU=300 massCU=null
+  P2b create (pre-funded shell): fee=401500 CU=18592 massCU=11535
+  P3 write_payload: fee=401500 CU=9068 massCU=3246
+  P4 transfer owner-mode alice->bob: fee=401500 CU=3534 massCU=3384
+  P5 transfer namespace-mode: fee=401500 CU=10732 massCU=4910
+  U-ref write_payload (namespace mode): fee=401500 CU=9077 massCU=3255
+  P6 create frozen: fee=401500 CU=18356 massCU=11299
+  pre-fund authority PDA: fee=3000 CU=300 massCU=null
+  cleanup: sweep authority PDA: fee=201500 CU=5958 massCU=null
+  create oD (owner mode, owner alice): fee=401500 CU=15356 massCU=8299
+  P12 approve alice -> delegate dave: fee=401500 CU=3423 massCU=3273
+  P13 transfer by delegate dave -> bob: fee=401500 CU=3537 massCU=3387
+  approve bob -> dave: fee=401500 CU=3423 massCU=3273
+  P14 revoke by delegate: fee=401500 CU=1824 massCU=1674
+  approve bob -> dave (2): fee=401500 CU=3423 massCU=3273
+  P15 revoke by owner: fee=401500 CU=1821 massCU=1671
+  approve bob -> dave (3): fee=401500 CU=3423 massCU=3273
+  P17 owner transfer bob -> alice: fee=401500 CU=3534 massCU=3384
+  P19 resize 48 -> 64 (shortfall): fee=401500 CU=12909 massCU=6274
+  P20a send excess lamports to the asset: fee=3000 CU=300 massCU=null
+  P20b resize 64 -> 72 (excess, no top-up): fee=401500 CU=11224 massCU=4589
+  P21 resize 72 -> 1024 (maximum): fee=601500 CU=12909 massCU=6274
+  approve alice -> dave (P24): fee=401500 CU=3423 massCU=3273
+  P24 transfer alice -> alice (same owner): fee=401500 CU=3534 massCU=3384
+  fund test-payer PDA: fee=3000 CU=300 massCU=null
+  P23 resize o1 48 -> 64, payer = PDA via CPI: fee=401500 CU=12925 massCU=6274
+  cleanup: sweep test-payer PDA: fee=201500 CU=5961 massCU=null
+  P22 consume resized asset -> alice: fee=401500 CU=10036 massCU=3806
+  U-ref create owner = wallet: fee=401500 CU=15356 massCU=8299
+  U-ref consume -> wallet: fee=401500 CU=10033 massCU=3814
+  P7 consume o1 -> bob: fee=401500 CU=10032 massCU=3806
+  P8 consume o2 -> bob: fee=401500 CU=10041 massCU=3815
+  P9 consume frozen o3 -> alice: fee=401500 CU=10041 massCU=3815
+  create o5 for orphan: fee=401500 CU=15356 massCU=8299
+  create o6 for orphan: fee=401500 CU=15356 massCU=8299
+  sweep DRZmQ4: fee=3000 CU=300 massCU=null
+  sweep FHCtQu: fee=3000 CU=300 massCU=null
+RESULT_JSON {"phase":"live","passed":93,"total":93,"results":[{"id":"P1 create empty","ok":true,"detail":"size=152 lamports=1422400 authority_bump=255 (expected 255)"},{"id":"E1 Create event","ok":true,"detail":"tag=0 segments=7"},{"id":"P2 create pre-funded","ok":true,"detail":"lamports=1259840 (shell had 650240)"},{"id":"E2 WritePayload event","ok":true,"detail":"tag=2 segments=5"},{"id":"P3 write_payload","ok":true,"detail":"payload[0..12]=TESTABCDEFGH headerUnchanged=true"},{"id":"P4 transfer owner-mode","ok":true,"detail":"owner=DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw"},{"id":"E3 Transfer event (by owner)","ok":true,"detail":"tag=1 segments=6"},{"id":"E4 Transfer event (by authority)","ok":true,"detail":"tag=1 segments=6"},{"id":"P5 transfer namespace-mode","ok":true,"detail":"owner=DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw"},{"id":"P6 create frozen","ok":true,"detail":"size=104"},{"id":"N1 create direct, authority not signer","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N2 create via issuer under foreign namespace","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N3 create wrong object address","ok":true,"detail":"expected InvalidObjectAddress, got InvalidObjectAddress"},{"id":"N4a create transfer_mode=3","ok":true,"detail":"expected InvalidFlags, got InvalidFlags"},{"id":"N4b create reserved flag bit","ok":true,"detail":"expected InvalidFlags, got InvalidFlags"},{"id":"N5 create payload_len 1025","ok":true,"detail":"expected InvalidAccountSize, got InvalidAccountSize"},{"id":"N6 create owner = default","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N7 create on live asset address","ok":true,"detail":"expected ObjectAddressInUse, got ObjectAddressInUse"},{"id":"N8 transfer owner-mode by issuer authority","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N9 transfer by former owner (alice)","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N10 transfer frozen asset","ok":true,"detail":"expected TransferDisabled, got TransferDisabled"},{"id":"N11 transfer to default pubkey","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N12 namespace-mode transfer by owner","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N13 write_payload by owner (not authority)","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N14 write_payload out of bounds","ok":true,"detail":"expected PayloadOutOfBounds, got PayloadOutOfBounds"},{"id":"N15 consume with wrong refund account","ok":true,"detail":"expected RefundMismatch, got RefundMismatch"},{"id":"N16 consume by owner directly","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N17 orphan_close while issuer alive","ok":true,"detail":"expected NamespaceAlive, got NamespaceAlive"},{"id":"N18 orphan_close with fake ProgramData","ok":true,"detail":"expected NamespaceAlive, got NamespaceAlive"},{"id":"N19 orphan_close by non-owner","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N21 transfer to the asset's own address","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N22 create with owner = object address","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N23 create with object = authority","ok":true,"detail":"expected DuplicateAccount, got DuplicateAccount"},{"id":"N24 create with underfunded payer","ok":true,"detail":"expected InsufficientFunds, got InsufficientFunds"},{"id":"N25 consume with read-only owner account","ok":true,"detail":"expected AccountNotWritable, got AccountNotWritable"},{"id":"N26 orphan_close with wrong namespace","ok":true,"detail":"expected NamespaceMismatch, got NamespaceMismatch"},{"id":"N27 unknown instruction tag","ok":true,"detail":"expected InvalidInstruction, got InvalidInstruction"},{"id":"N28 write_payload empty at offset == payload_len (no-op)","ok":true,"detail":"simulation succeeded"},{"id":"N29 create with owner = Mass Asset program","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N30 create with owner = issuer program","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N31 transfer to Mass Asset program","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N32 transfer to issuer program","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N33 create with owner = issuer authority PDA","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N34 transfer to issuer authority PDA","ok":true,"detail":"expected InvalidOwner, got InvalidOwner"},{"id":"N35 create with payer = authority PDA (funded)","ok":true,"detail":"expected DuplicateAccount, got DuplicateAccount"},{"id":"N36 create with payer = issuer program","ok":true,"detail":"expected DuplicateAccount, got DuplicateAccount"},{"id":"N37 approve by non-owner","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N38 approve delegate = owner","ok":true,"detail":"expected InvalidDelegate, got InvalidDelegate"},{"id":"N39 approve delegate = issuer authority PDA","ok":true,"detail":"expected InvalidDelegate, got InvalidDelegate"},{"id":"N40 approve delegate = default","ok":true,"detail":"expected InvalidDelegate, got InvalidDelegate"},{"id":"N41 approve delegate = issuer program","ok":true,"detail":"expected InvalidDelegate, got InvalidDelegate"},{"id":"N42 approve delegate = Mass Asset program","ok":true,"detail":"expected InvalidDelegate, got InvalidDelegate"},{"id":"N43 approve on namespace-mode asset","ok":true,"detail":"expected DelegationNotAllowed, got DelegationNotAllowed"},{"id":"P12 approve sets delegate","ok":true,"detail":"delegate=Hx3Y9fqSKqobqjiPFPX684q8NCn4TJKpzKUiwv57UTp8"},{"id":"E7 Approve event","ok":true,"detail":"tag=4 segments=5"},{"id":"N44 write_payload by delegate","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N45 consume by delegate","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N46 orphan_close by delegate","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N47 transfer by stranger while delegate set","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"P13 delegate transfer clears delegate","ok":true,"detail":"owner=DRZmQ4PZz4xsN9YbjCaav49LW5G8Lrs8vpAR5BLBcRhw delegate=11111111111111111111111111111111"},{"id":"E8 Transfer event (by delegate)","ok":true,"detail":"tag=1 segments=6"},{"id":"N48 former delegate cannot transfer again","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"P14 delegate revokes itself","ok":true,"detail":"delegate=11111111111111111111111111111111"},{"id":"E9 Revoke event (by delegate)","ok":true,"detail":"tag=5 segments=5"},{"id":"P15 owner revokes","ok":true,"detail":"delegate=11111111111111111111111111111111"},{"id":"E10 Revoke event (by owner)","ok":true,"detail":"tag=5 segments=5"},{"id":"P16 revoke without delegate by owner (idempotent)","ok":true,"detail":"simulation succeeded"},{"id":"N49 revoke by stranger","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N50 revoked delegate cannot transfer","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"P17 owner transfer clears delegate","ok":true,"detail":"owner=FHCtQuCwhw7b2KWQupjUkHNuqXB3Zh9CyzQqkQprxqh5 delegate=11111111111111111111111111111111"},{"id":"P18 failed transaction changes nothing","ok":true,"detail":"landed=true err={\"InstructionError\":[2,{\"Custom\":1}]} delegate=11111111111111111111111111111111 eventsInLogs=1 (indexers must check meta.err)"},{"id":"P19 resize grows and tops up","ok":true,"detail":"size=168 lamports=1503680 expected=1503680 topup=81280 oldPayloadKept=true newBytesZero=true"},{"id":"E11 Resize event (shortfall)","ok":true,"detail":"tag=6 segments=6"},{"id":"P20 resize with excess keeps lamports","ok":true,"detail":"lamports before=2003680 after=2003680 walletDelta=-401500"},{"id":"E12 Resize event (no top-up)","ok":true,"detail":"tag=6 segments=6"},{"id":"P21 resize to MAX_PAYLOAD","ok":true,"detail":"size=1128"},{"id":"N51 resize beyond MAX_PAYLOAD","ok":true,"detail":"expected InvalidAccountSize, got InvalidAccountSize"},{"id":"N52 resize not growing (equal)","ok":true,"detail":"expected InvalidAccountSize, got InvalidAccountSize"},{"id":"N53 resize by non-authority","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"N54 resize payer = authority","ok":true,"detail":"expected DuplicateAccount, got DuplicateAccount"},{"id":"N55 resize with underfunded payer","ok":true,"detail":"expected InsufficientFunds, got InsufficientFunds"},{"id":"N56 resize with wrong system program","ok":true,"detail":"expected InvalidSystemProgram, got InvalidSystemProgram"},{"id":"N57 resize shrink","ok":true,"detail":"expected InvalidAccountSize, got InvalidAccountSize"},{"id":"P24 transfer to same owner clears delegate","ok":true,"detail":"owner=FHCtQuCwhw7b2KWQupjUkHNuqXB3Zh9CyzQqkQprxqh5 delegate=11111111111111111111111111111111"},{"id":"E13 Transfer event (same owner)","ok":true,"detail":"tag=1 segments=6"},{"id":"P23 resize with PDA payer through CPI","ok":true,"detail":"size=168 pdaPaid=81280 oldPayloadKept=true"},{"id":"P22 consume resized asset returns all lamports","ok":true,"detail":"delta=6380480 expected=6380480"},{"id":"P7 consume o1 -> bob","ok":true,"detail":"refund delta=1503680 expected=1503680 account=gone"},{"id":"E5 Close event (consume)","ok":true,"detail":"tag=3 segments=6"},{"id":"P8 consume o2 -> bob","ok":true,"detail":"refund delta=1259840 expected=1259840 account=gone"},{"id":"P9 consume frozen o3 -> alice","ok":true,"detail":"refund delta=1178560 expected=1178560 account=gone"},{"id":"prepare orphan objects","ok":true,"detail":"o5=NsjK6bBqQeK1pHh7QbvpMRPVXtHPXtiJoRA3JaifhcE o6=5YFrKLp8ZPJnrdZUCPSycUtH6fBGw6pBXhKEDpUnirwh"},{"id":"F1","ok":true,"detail":"39 landed transactions finalized with the observed outcome"}],"metrics":[{"label":"P1 create (empty address)","sig":"4L9SXVFNgKKZGM9MzgRzddtnCfi4PYP6wdbVAF51sSTAXxJnypRPCRxsrMGyLLAZfb4PCFSA85GtzPUgnTEUX3rc","fee":401500,"cu":18356,"massCu":11299},{"label":"P2a pre-fund address (System shell)","sig":"3kGrZb8WRrPHgLkNVSFcfWj9ZGNaYnR4h2LNRSdyqDLFUTsLr74NYUp4Hc7LYSgs9CJ7xrVRKiq2MmX3V6MunaFh","fee":3000,"cu":300,"massCu":null},{"label":"P2b create (pre-funded shell)","sig":"A2esYaJWzmuGbfAgVHfmS1r7nWmJojCtrpaRCrtmM7jiQquAKo6Tiuwk6zVM3xhdRgzZ3i7JXioWKee9kFqZ5cJ","fee":401500,"cu":18592,"massCu":11535},{"label":"P3 write_payload","sig":"44wwFYTh6ZHNADryBwdSaN7RouZTmcf53grmRnzPAq8CcU6FyFGRqhHoT95QvSyW86TUx2DTuThzNpY9ug76v75x","fee":401500,"cu":9068,"massCu":3246},{"label":"P4 transfer owner-mode alice->bob","sig":"5WdVDZBZPFtYafB7oc9d6T7xqTSQACzkGzmLFcRi3c9yAuXv5GnpRLjMWKwLL9NU3UdzfsUT2Z9U89tTrCkuRfxa","fee":401500,"cu":3534,"massCu":3384},{"label":"P5 transfer namespace-mode","sig":"3ebaqmaTHpTk3PegEC64FB3Y5H4sdBWQd3g22WomfpDChndDZ6wMEwFrcGuMiicwFdjuUzbsWeWWs5DLfzWZJe4d","fee":401500,"cu":10732,"massCu":4910},{"label":"U-ref write_payload (namespace mode)","sig":"NmzfBA1N5a3WE8S6K9Yy8LqzLNJQPcPKWgXcdJigkuL9MyQsT7ASSgu6amED8XpZsEo1JfjAmLREhCRHx5JdjUN","fee":401500,"cu":9077,"massCu":3255},{"label":"P6 create frozen","sig":"2Kyv2yfAmFCrf3L7rWFAKSRBn7GjVTEusWuuYSSyTTcsFczSZe1VTMJyyn5yEXUAKL4imTG6c4eiPHjCxQNEhTXh","fee":401500,"cu":18356,"massCu":11299},{"label":"pre-fund authority PDA","sig":"wJ2hDXWgwCtGRuLTb5FCamZD4wHu859p3EKEQm77LyVyLA9NxDAE4Qmurbo4a9qCC2LCNkgbt4mR7XFnhdHJswZ","fee":3000,"cu":300,"massCu":null},{"label":"cleanup: sweep authority PDA","sig":"2SFvyCgdWVxtVdqUsx8QtPEZDwZTRwvvRx9MpPxUDAmJtC3wYNkhGuN18XgHB7mKJZV6FVwyZ2JDacrof7R1vbeQ","fee":201500,"cu":5958,"massCu":null},{"label":"create oD (owner mode, owner alice)","sig":"33KvnEX29S7iawrVJT5kSX2Vs5Fywx9KjaZGNG3ujGAX1FqyzEWw4AXTvjQFdhkn9ZuzDwE9z46Y72cTKdTCTxB8","fee":401500,"cu":15356,"massCu":8299},{"label":"P12 approve alice -> delegate dave","sig":"vb3VRHQ5iyjeHFF5i48WWEwyoXXCkBoDCsKQKuZnNZL8MsZxdKQWj13WXRi2hKNiZFGzQczTP3fAWx1pVenaVaC","fee":401500,"cu":3423,"massCu":3273},{"label":"P13 transfer by delegate dave -> bob","sig":"TKaqd3wzKaarEXBk2D5SpdS6etNqnHUznTGTNDZrCeYkHJ4CrDB3qJeKVGrfi5YqERhU9Ek9d7jj8UNzjKB2ZoK","fee":401500,"cu":3537,"massCu":3387},{"label":"approve bob -> dave","sig":"5MQttvUETY4qBHeiZZbA1Ch3i9Y6GixPLS5Vac6yG9S8L3thDmz13RKehV6tn5fXouVTxVkQdTdTyu2D9GxjNjt","fee":401500,"cu":3423,"massCu":3273},{"label":"P14 revoke by delegate","sig":"3xuFfHrddrUhd1MRu1SaFf9qTwiRrHQCoU4WcPPukhjKV8HBHtrZ8YFkDrMZ4TVfV9fcLzM2i6diXBCR4CNjCYTP","fee":401500,"cu":1824,"massCu":1674},{"label":"approve bob -> dave (2)","sig":"33UCTVvCWTxp4484CZEGskF8oEm4fH193SAVnRq8PikyqDdRLaTGCYV3fcrYRD7pqTuG1ULgEm1kbe2iAs7wETn8","fee":401500,"cu":3423,"massCu":3273},{"label":"P15 revoke by owner","sig":"27TzmfpuzDjsvmBWmBo2zt5xGqZhrRUrXipvhzXxnsNE7Ho3dkd9y2KywoRyiywuvyyk63nXAjCDoaYCLSRH4Vbg","fee":401500,"cu":1821,"massCu":1671},{"label":"approve bob -> dave (3)","sig":"61BzVYKQ71xWBZPAGXW1Mvmr7SqBVYwjYTgySqvVrTw6Vd84FLogp6mzp1aSsS1fcWCJPcms3P7TPGkGQaadYbbD","fee":401500,"cu":3423,"massCu":3273},{"label":"P17 owner transfer bob -> alice","sig":"4kmGpJz4EmXtMJaRd1PtGwdPBMTjaQqy3qhHCFTyGpCtiFhWoXTQsjK6e1UyeK1s2Y86svn7HrnJUpRKGHfMq8gx","fee":401500,"cu":3534,"massCu":3384},{"label":"P19 resize 48 -> 64 (shortfall)","sig":"fAaMjeAQK64ENzeCdnBtcDmVvDPGWNXfQQETte37fNoNzUrnqoXUvdMPJuS6mYtut7uiZMgfSTA3SwGDcx5oZNz","fee":401500,"cu":12909,"massCu":6274},{"label":"P20a send excess lamports to the asset","sig":"LvFXAFEazTc2oMeHGjWHa9vrxaST19AQAzpioSpv1J14oXt2cXQV3fmUNQB4CGTpXeaDTATLLsdG1ZSLkfBkndu","fee":3000,"cu":300,"massCu":null},{"label":"P20b resize 64 -> 72 (excess, no top-up)","sig":"25Wr5cv2NE9XoMevPAsZpwLvpfaaXcbfzKUfGW7yWeUcfgk8NfvymkPRcv92xerKQA1p66eRp8o7tFbQFty19Xpo","fee":401500,"cu":11224,"massCu":4589},{"label":"P21 resize 72 -> 1024 (maximum)","sig":"2Frp5TCRXjPPquc2TWNwNxxcHuT5QUcLWSkpusoVLJ6kT157Ve4JXK9nQQDvjntnTU9VH7YtRcHjnedLT6kTfTy5","fee":601500,"cu":12909,"massCu":6274},{"label":"approve alice -> dave (P24)","sig":"5Vfdmc7CnDdWrBHxBPxHxuziFsrKurKFDSLHqJJdEhm3RK4xgvV9QgGn4bnne6gHqvoxK65jMVtrcB4sA6PXCjEW","fee":401500,"cu":3423,"massCu":3273},{"label":"P24 transfer alice -> alice (same owner)","sig":"3zVTvbRkJj7PkuokhRRqTvvVVFncEmp2WnQGoLSL1k1Bb2NSfaxrWJQjZ8P6vosDcBoSsnDZca2XENvLvkmqfg4h","fee":401500,"cu":3534,"massCu":3384},{"label":"fund test-payer PDA","sig":"5k4LMCjjm21bRkDCBbrHDmdyRiKW91tG2isjgCbmJLvRemALHrpZw73EEuGGspsmyVJJsvSMVR9v5vGHzZBv1qhm","fee":3000,"cu":300,"massCu":null},{"label":"P23 resize o1 48 -> 64, payer = PDA via CPI","sig":"5fmiHq7F6WAxFqhETDiuirRsRjhj5fR2gJaHupi2fN9j8DZgY2bivBTtGUbM41eJ8kBrB1rc9Aeb3xaKfieN8z29","fee":401500,"cu":12925,"massCu":6274},{"label":"cleanup: sweep test-payer PDA","sig":"3U5qh346VVxdrVDENnmTPfjmKqj2y2EoU6gJfAYBDFQy7AoSgxBnzvtbP3zmc7B2QhbdVyEW2BqQhLWqp8nNAYeo","fee":201500,"cu":5961,"massCu":null},{"label":"P22 consume resized asset -> alice","sig":"4ScSeXd5vLCKBb4ALH54myyQxDkiGRjkH9wveycph1qFWC7mYxpjFTD4SEs7d5c2HZKroho8bNbWQ25MUQRotr5g","fee":401500,"cu":10036,"massCu":3806},{"label":"U-ref create owner = wallet","sig":"4te8o3r7k356cQaWB8es11Wbt22deR8scvqaV4HNbGEp1ChyjQtN4sQ6WrKQ8boFTyDdryFrPSAVUsJVjCi6hMFQ","fee":401500,"cu":15356,"massCu":8299},{"label":"U-ref consume -> wallet","sig":"4ZwP7mL1AiZ3BuUxCJ9Pyie14pbpaydEHWujxRZayj4d3qpenbTfWWfGeypaEMFFKoZM5tcSqADJoVTw1xJVRd1X","fee":401500,"cu":10033,"massCu":3814},{"label":"P7 consume o1 -> bob","sig":"3NSmZVJgeFFAoq2yj5PKTctZLH1ys9Pb1fuUWMiatyCq8bAnBXorCueB2j425sVceGZRxs4vMBDPA85EshkeP3K6","fee":401500,"cu":10032,"massCu":3806},{"label":"P8 consume o2 -> bob","sig":"5ikaicJNBWBFpMdy1Dn9CakxuXUSvf9nSCviZToeSLoNPbpewCCTvdqEfGq1QjX7LLGwoxu6HhX4uePbrBrdkd6y","fee":401500,"cu":10041,"massCu":3815},{"label":"P9 consume frozen o3 -> alice","sig":"4Lrx64oviRgXWNv2bKWz5k9xAmKwV5sE5zv7AzjAXybdGmVLBBjAAX93VDQPq2HWUpxt1z4X8RNMbt3QEUSSjbKs","fee":401500,"cu":10041,"massCu":3815},{"label":"create o5 for orphan","sig":"2a4HpQSVa3UMFWGR4wUBmFtmfbwCFT4xZPz3SMF3Po5tGTX7DoGegk7D1kZhc3FyjbakfuxBzkEZ3iT4kEBNdVYb","fee":401500,"cu":15356,"massCu":8299},{"label":"create o6 for orphan","sig":"39GGmR6gsUNHHLaFqR3Z3EWQZBviuaAYthtU8FwfQxhoDcFGim2tXE2dGVvoXeMWbPP5EXr3meZHvE3RHaCAbSVk","fee":401500,"cu":15356,"massCu":8299},{"label":"sweep DRZmQ4","sig":"SxNKpv1GsEKcmypQ4QdbMn9wPk649zqaWADNYVkwq5BYRGhCukFscyyMBQhrwuJxS34Am4G6122UkxQV3tXBZto","fee":3000,"cu":300,"massCu":null},{"label":"sweep FHCtQu","sig":"2At6cNcdoFQKFtHD2bvTWnKfg82EpCbVD6HmiF3Ezs5paeUmYitRsdZW4V8T3wunsTDe18xygbADPzbXA1iTZfJK","fee":3000,"cu":300,"massCu":null}]}
+[6/8] Phase ISSUER-B (constant authority cost)...
+======================================================
+ MASS ASSET v1 — ON-CHAIN SUITE — phase issuer-b
+======================================================
+Mass Asset:  CjbH76UhFC1BWCZEdnGGPK3XmV7n5xjKgzPDQ4FStD6R
+Issuer:      9uf7V4FbVFqWMoXkV5zbjd6T1f9d29huAZfkLmoarzsZ
+Authority:   4VQS97DKPfgAGgoq62PmFeuz41Zrjhtk9NCRz8FEbTat
+ProgramData: Cr1NeE47XTifjo8soPquVCQxvUdqTncYNc65BuxAexyN
+
+=== U1–U4 — CONSTANT AUTHORITY COST ACROSS ISSUERS ===
+Issuer A GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev authority_bump=255
+Issuer B 9uf7V4FbVFqWMoXkV5zbjd6T1f9d29huAZfkLmoarzsZ authority_bump=253
+  tx issuer B create (namespace mode): 4o49BXusizXjwagUQDsjQ8xsXPPwcU8GDuJ7bB7STbpDzJVMJPB4p9EJzbqfx5tSJuhcxypzqecvrnQ2ygdkxg19 fee=401500 CU=21356 massCU=11299
+PASS  U1 issuer B asset stores its own authority bump  authority_bump=253 expected=253
+  tx issuer B write_payload: 2e74ZcmJJ582fhqwAhpeeAWk1zTFzNwYF73nhLyTJAPWyra2FMcsie4iWRdhn34E98BF94euZtiaPZr6jc55YVSW fee=401500 CU=12077 massCU=3255
+  tx issuer B transfer namespace-mode: xxErpudb8yUk6wMnNzVcMV6kJytyM1xAqmDmkNP36xpEhTRtdpRJZ6zZ55xXyrcPFPW3kq9STcNWE1A4rkjksgx fee=401500 CU=13732 massCU=4910
+  tx issuer B consume: 2XaepWUHkAgN8QgeJ6u6GAGaiJN9GxxFrqikZqZERDQYGvZya6KmRMpVt92GwvyQwBoJFhLgmm5zyA94wmmUhUSh fee=401500 CU=13033 massCU=3814
+PASS  U2 Mass Asset CU identical across issuers: write_payload  issuer A=3255 issuer B=3255
+PASS  U3 Mass Asset CU identical across issuers: transfer ns  issuer A=4910 issuer B=4910
+PASS  U4 Mass Asset CU identical across issuers: consume  issuer A=3814 issuer B=3814
+Finalized: all 4 transactions of phase issuer-b
+
+=== SUMMARY phase issuer-b ===
+5/5 checks passed
+
+Metrics (fee lamports / CU consumed):
+  issuer B create (namespace mode): fee=401500 CU=21356 massCU=11299
+  issuer B write_payload: fee=401500 CU=12077 massCU=3255
+  issuer B transfer namespace-mode: fee=401500 CU=13732 massCU=4910
+  issuer B consume: fee=401500 CU=13033 massCU=3814
+RESULT_JSON {"phase":"issuer-b","passed":5,"total":5,"results":[{"id":"U1 issuer B asset stores its own authority bump","ok":true,"detail":"authority_bump=253 expected=253"},{"id":"U2 Mass Asset CU identical across issuers: write_payload","ok":true,"detail":"issuer A=3255 issuer B=3255"},{"id":"U3 Mass Asset CU identical across issuers: transfer ns","ok":true,"detail":"issuer A=4910 issuer B=4910"},{"id":"U4 Mass Asset CU identical across issuers: consume","ok":true,"detail":"issuer A=3814 issuer B=3814"},{"id":"F1","ok":true,"detail":"4 landed transactions finalized with the observed outcome"}],"metrics":[{"label":"issuer B create (namespace mode)","sig":"4o49BXusizXjwagUQDsjQ8xsXPPwcU8GDuJ7bB7STbpDzJVMJPB4p9EJzbqfx5tSJuhcxypzqecvrnQ2ygdkxg19","fee":401500,"cu":21356,"massCu":11299},{"label":"issuer B write_payload","sig":"2e74ZcmJJ582fhqwAhpeeAWk1zTFzNwYF73nhLyTJAPWyra2FMcsie4iWRdhn34E98BF94euZtiaPZr6jc55YVSW","fee":401500,"cu":12077,"massCu":3255},{"label":"issuer B transfer namespace-mode","sig":"xxErpudb8yUk6wMnNzVcMV6kJytyM1xAqmDmkNP36xpEhTRtdpRJZ6zZ55xXyrcPFPW3kq9STcNWE1A4rkjksgx","fee":401500,"cu":13732,"massCu":4910},{"label":"issuer B consume","sig":"2XaepWUHkAgN8QgeJ6u6GAGaiJN9GxxFrqikZqZERDQYGvZya6KmRMpVt92GwvyQwBoJFhLgmm5zyA94wmmUhUSh","fee":401500,"cu":13033,"massCu":3814}]}
+
+Closed Program Id 9uf7V4FbVFqWMoXkV5zbjd6T1f9d29huAZfkLmoarzsZ, 0.1018286 SOL reclaimed
+
+Cleanup: issuer-b 9uf7V4FbVFqWMoXkV5zbjd6T1f9d29huAZfkLmoarzsZ closed (ProgramData Cr1NeE47XTifjo8soPquVCQxvUdqTncYNc65BuxAexyN absent at finalized)
+[7/8] Closing test issuer A (namespace disappears), phase ORPHAN...
+
+Closed Program Id GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev, 0.1018286 SOL reclaimed
+
+Cleanup: issuer-a GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev closed (ProgramData 5PkZ4L7aTPMpXj4UDaUjpChgTYCHGqsHcWFiyTsstaLu absent at finalized)
+======================================================
+ MASS ASSET v1 — ON-CHAIN SUITE — phase orphan
+======================================================
+Mass Asset:  CjbH76UhFC1BWCZEdnGGPK3XmV7n5xjKgzPDQ4FStD6R
+Issuer:      GGD6Yik3C63cQAp76T1WupMFVvKEncpHSQ3p8qmsmMev
+Authority:   GKWVX3CWwogvsvbjk75j56PHw42wf1WEqHWZMSDtjwJT
+ProgramData: 5PkZ4L7aTPMpXj4UDaUjpChgTYCHGqsHcWFiyTsstaLu
+
+=== ORPHAN CLOSE (issuer closed) ===
+Issuer ProgramData after close: does not exist
+PASS  N20 orphan_close by non-owner after issuer closed  expected InvalidAuthority, got InvalidAuthority
+  tx P10 orphan_close o5: 3iyWU6KPR5btrtBSTRY7iiHqNWu5FeGqBtoLQ4KWSBJmqe1Kn7C1Q9KbfJBEmPsAcXkJC1duURaX6xUPRsCNmx4E fee=401500 CU=2808 massCU=2658
+PASS  P10 orphan_close  refund delta=1422400 expected=1422400
+PASS  E6 Close event (orphan)  tag=3 segments=6
+  tx P11a re-fund dead ProgramData (griefing attempt): 5dshSRgDvJnGCPZZ8CGhNEVSZacHwyDwB1k7DucY1RpRTipmVQ9LY1bJBDqyNnc6jYkBhNSFpENeNt7MeA2L54wx fee=3000 CU=300 massCU=null
+Dead ProgramData now: {
+  owner: '11111111111111111111111111111111',
+  lamports: 650240,
+  size: 0
+}
+  tx P11b orphan_close o6 after griefing: 41mpR9FbnvRhFpDEmxVt4Mvj535XggaKfrUzdaHw9t6PHnDW7vzQiQdU8c3NSi85MDd7M5cWuzGyrBh77LkXKCve fee=401500 CU=2808 massCU=2658
+PASS  P11 orphan_close survives re-funded ProgramData shell  shellOwner=11111111111111111111111111111111 refund delta=1422400
+  tx sweep FHCtQu: 263QWD3xqEr4pD8ZDuZFWGSdNDSHeiEFpdWEJ1FHKdzpy5FRev33MwEp3vajMH4Rqw8FMK9NPCF9Ed3Zqf9mgY6p fee=3000 CU=300 massCU=null
+Finalized: all 4 transactions of phase orphan
+
+=== SUMMARY phase orphan ===
+5/5 checks passed
+
+Metrics (fee lamports / CU consumed):
+  P10 orphan_close o5: fee=401500 CU=2808 massCU=2658
+  P11a re-fund dead ProgramData (griefing attempt): fee=3000 CU=300 massCU=null
+  P11b orphan_close o6 after griefing: fee=401500 CU=2808 massCU=2658
+  sweep FHCtQu: fee=3000 CU=300 massCU=null
+RESULT_JSON {"phase":"orphan","passed":5,"total":5,"results":[{"id":"N20 orphan_close by non-owner after issuer closed","ok":true,"detail":"expected InvalidAuthority, got InvalidAuthority"},{"id":"P10 orphan_close","ok":true,"detail":"refund delta=1422400 expected=1422400"},{"id":"E6 Close event (orphan)","ok":true,"detail":"tag=3 segments=6"},{"id":"P11 orphan_close survives re-funded ProgramData shell","ok":true,"detail":"shellOwner=11111111111111111111111111111111 refund delta=1422400"},{"id":"F1","ok":true,"detail":"4 landed transactions finalized with the observed outcome"}],"metrics":[{"label":"P10 orphan_close o5","sig":"3iyWU6KPR5btrtBSTRY7iiHqNWu5FeGqBtoLQ4KWSBJmqe1Kn7C1Q9KbfJBEmPsAcXkJC1duURaX6xUPRsCNmx4E","fee":401500,"cu":2808,"massCu":2658},{"label":"P11a re-fund dead ProgramData (griefing attempt)","sig":"5dshSRgDvJnGCPZZ8CGhNEVSZacHwyDwB1k7DucY1RpRTipmVQ9LY1bJBDqyNnc6jYkBhNSFpENeNt7MeA2L54wx","fee":3000,"cu":300,"massCu":null},{"label":"P11b orphan_close o6 after griefing","sig":"41mpR9FbnvRhFpDEmxVt4Mvj535XggaKfrUzdaHw9t6PHnDW7vzQiQdU8c3NSi85MDd7M5cWuzGyrBh77LkXKCve","fee":401500,"cu":2808,"massCu":2658},{"label":"sweep FHCtQu","sig":"263QWD3xqEr4pD8ZDuZFWGSdNDSHeiEFpdWEJ1FHKdzpy5FRev33MwEp3vajMH4Rqw8FMK9NPCF9Ed3Zqf9mgY6p","fee":3000,"cu":300,"massCu":null}]}
+[8/8] Mass Asset was an existing deployment; not closing it. Re-checking it...
+Deployment after:  programdata=FkctNxnae7atV6U2XsjYFptcSArSyVyXzyRmRHMhBMf9 slot=203102823 authority=DTfvjtRL63u3XYHXQfgRQCdhEanUK1qqawvfEAM9hxAc
+Bytecode after:    88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c
+Deployment: UNCHANGED
+Cleanup: OK
+
+Balance start: 8809734353
+Balance end:   8790837703
+Net cost:      18896650 lamports
+
+=== ON-CHAIN SUITE PASSED ===
+Saved full log: /home/sergey/mass-asset-release-rc1/tests/onchain/onchain.log

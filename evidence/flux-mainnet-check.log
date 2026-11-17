@@ -1,0 +1,169 @@
+=== FLUX TEST RELEASE — MAINNET REHEARSAL AGAINST THE MASS ASSET CANDIDATE ===
+Run: 20261117T073233Z-ba64b57c
+Genesis: 4SvBP3omtvcCVWdxq1zBY5cDp4wndjsThb6nEMn6iMdN
+Network: X1 mainnet (pinned genesis)
+RPC: https://rpc.mainnet.x1.xyz
+Rehearsal wallet: H648QrGsNNR8WNnrgnxHG2kaSqbSKAj86gju4so1Y86x (dedicated, test only)
+Test FLUX program: 7k8Y9cGvPRsv4rrab7CUAJzXmd1mFGwMc4c2LbzeaLcc
+Mass Asset program: MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp
+Journal: /home/sergey/flux1-contracts/prototype/flux-mainnet-check/evidence/journal-20261117T073233Z-ba64b57c.jsonl
+Lock: /home/sergey/.flux-rehearsal-locks/699a27d9a2598dba27bc9a37034a9d4e.lock (held for the whole run)
+PASS  Mass Asset id is a MAss… candidate
+PASS  rehearsal wallet is the pinned one  — H648QrGsNNR8WNnrgnxHG2kaSqbSKAj86gju4so1Y86x
+PASS  rehearsal build present  — /home/sergey/flux1-contracts/programs/flux/target/deploy-rehearsal/flux.so, /home/sergey/flux1-contracts/programs/flux/target/deploy-rehearsal/build-record.json
+PASS  build record binds feature, ids, bump and artifact: rehearsal, this FLUX id, this Mass Asset id, bump of this id, this rehearsal_ids.rs, this .so, clean tree at a known commit  — {"feature":"rehearsal","flux_program_id":"7k8Y9cGvPRsv4rrab7CUAJzXmd1mFGwMc4c2LbzeaLcc","mass_asset_id":"MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp","ma_authority_bump":255,"ids_rs_sha256":"2745460afefe6af6727af83066bd59bec4fd54ee71f7386ffe01eab697488aae","so_sha256":"24ded2dba48633aba377a8dd42050e8489ef83c0d82745d6269f9c40b390e4ad","commit":"15a3f85be652657cce92fd64341a78f47201bd8d","tree_dirty":false,"dirty_files":[]}
+Test FLUX build: 14d343d06d10c4397a3b9534de34eff6b3eee697b1feb88c4ebf6b379ead89b7 (sha256 24ded2dba48633aba377a8dd42050e8489ef83c0d82745d6269f9c40b390e4ad), commit 15a3f85be652657cce92fd64341a78f47201bd8d, bump 255
+PASS  network: X1 mainnet (pinned genesis)  — 4SvBP3omtvcCVWdxq1zBY5cDp4wndjsThb6nEMn6iMdN
+PASS  no unfinished run for this network, wallet and test program
+PASS  test FLUX program id not deployed yet
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93861445 ≥ 0
+PASS  XDEX executable hash = pinned (the bytecode the direct withdraw was proven on)  — on chain 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e, pinned 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e
+PASS  XDEX amm config: 236 bytes, index 1, create pool allowed (disable_create 0), trade fee 2800 (0.28%), create fee 0.1 XNT  — 236 bytes, disable_create 0, index 1, trade_fee 2800, create_fee 100000000
+XDEX amm config sha256: 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400 (the whole account is compared with this from now on)
+PASS  Mass Asset candidate: finalized snapshot, upgradeable
+PASS  Mass Asset = build/candidate.txt (program id, genesis, deployment, executable hash)  — candidate MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na slot=93853701 authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+PASS  mainnet suite log: one pinned-mainnet PASSED run against this deployment and bytecode
+PASS  wallet holdings within the cap: 16 XNT ≤ balance (incl. WXNT) ≤ 25.0000 XNT  — 20.0000 XNT
+PASS  test FLUX build unchanged on disk
+Mass Asset deployment before: programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na slot=93853701 authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+Mass Asset bytecode: 88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c
+
+Plan: deploy the test FLUX program; test token without metadata; pool 3 XNT (stays in the test pool);
+XDEX gate (small direct deposit + withdraw); position A from the distribution, then position B from the wallet,
+10 XNT each, one after the other; cleanup; budget cap 25.0000 XNT. Signer: H648QrGsNNR8WNnrgnxHG2kaSqbSKAj86gju4so1Y86x.
+Re-checking everything that can change on chain...
+PASS  network: X1 mainnet (pinned genesis)  — 4SvBP3omtvcCVWdxq1zBY5cDp4wndjsThb6nEMn6iMdN
+PASS  no unfinished run for this network, wallet and test program
+PASS  test FLUX program id not deployed yet
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93861517 ≥ 0
+PASS  XDEX executable hash = pinned (the bytecode the direct withdraw was proven on)  — on chain 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e, pinned 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e
+PASS  XDEX amm config: 236 bytes, index 1, create pool allowed (disable_create 0), trade fee 2800 (0.28%), create fee 0.1 XNT  — 236 bytes, disable_create 0, index 1, trade_fee 2800, create_fee 100000000
+PASS  XDEX amm config byte-identical to the first check  — sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+PASS  Mass Asset candidate: finalized snapshot, upgradeable
+PASS  Mass Asset candidate unchanged since the first check  — programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na slot=93853701 authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+PASS  wallet holdings within the cap: 16 XNT ≤ balance (incl. WXNT) ≤ 25.0000 XNT  — 20.0000 XNT
+PASS  test FLUX build unchanged on disk
+Unfinished-run marker: /home/sergey/.flux-rehearsal-locks/699a27d9a2598dba27bc9a37034a9d4e.unfinished.json (removed by PASSED or by RECOVERY DONE)
+
+[1] deploy the test FLUX program (rehearsal build, own loader transactions)
+  deploy buffer: CbVJrXeyq85LfEDdWMLpLA3ES27kQS5HwWmpYbbApGv5 (journaled before it is created), 253088 bytes
+  tx deploy: create and initialize the buffer (authority = wallet): 25wE6F53CT6MF4o2MVFehQaoEjicn8cfSqoRP3w9cG2SoRUu4JVtxdURN4onoiwB1jYPGTK4A266vH9t91mdxXVV CU 2520 fee 25200
+  tx deploy: write: 128/252 confirmed
+  tx deploy: write: 252/252 confirmed
+PASS  deploy buffer: loader buffer, authority = wallet, bytes = local rehearsal build  — 252 writes of ≤ 1005 bytes
+  tx deploy: create the program account and deploy from the buffer (upgrade authority = wallet): 3TkSpXw3cvrrxhMGZjE1tLNiB6N6ZCMNGmCAgVcizNg2nZqMhUNdzAmPMJJismLdq3Sa7PBFiWPFoSnSfXsyBywW CU 2820 fee 26700
+PASS  program deploy: every landed transaction finalized with the observed outcome  — max finalized slot 93861731
+  after deploy: finalized snapshot at context 93861736 ≥ 93861731
+PASS  deployed test FLUX = local rehearsal build, upgrade authority = rehearsal wallet, buffer consumed (one finalized response)  — programdata=Dz1Tyn5TorPmLUy122jM18PTFvYzUk8EAJUfbwJ6jRuK slot=93861731 authority=H648QrGsNNR8WNnrgnxHG2kaSqbSKAj86gju4so1Y86x 14d343d06d10c4397a3b9534de34eff6b3eee697b1feb88c4ebf6b379ead89b7
+  program deploy: spent 1.7699 XNT (program rent, returned when the program is closed)
+
+[2] launch of the test release
+  tx create test token mint (9 decimals, no metadata): 4Ctwkp3Fs8uEP6jqwQkQpKaWjYWpc8bLXrUcSY6gtn15ue5VNkrrcHjcYLBnr8DxYFzwWLWekgGsDTF9hYb4mCVN CU 364 fee 2001500
+Test token mint: 5WV4J1DhoxzPn3nRY45erbC3wFXT6nSEZ8PLzgc5uuLa
+  tx initialize: 5xQUrACQL2B7onF8a69y6yJU9jkgmBgg62JfEFxYXmMHyQtmYHms7hcDY7VKGZP6Py7LhadQ1QKsRawhr3SiTuGD CU 51286 fee 2000000
+  tx mint the total supply to the fund vault, revoke mint and freeze authorities: 2EwYPN3JYfvcPi9RZ4ZpsU2LBHQpWc6iEhcyycx8EHcuBBNiN2MADziP1wPJpyYuLaWfuWkUVeTGG6vQ52DF3kcb CU 348 fee 6000000
+  tx confirm_supply: vEQx17ZMqRE1HrPs2bLQmJ9qetKniXWpeqTYfAbJnm4X74kES26BhNNyf6Lad79WKWVfG2NisvikjYBjJHPwQWd CU 6339 fee 2000000
+  tx commit_list (1 row: the rehearsal wallet, 60 000 tokens for 3 XNT): 2ocYRZqeeZ2Mvo5SWZLQbx8xp5nB1RnyxC7Xq54obCjniuzyYDUaWZfjqb5fFodrBP2BrggpuD2wf6AkD6vbxo7Z CU 6772 fee 2000000
+  tx load_rows: dUKTm1sGXjAY38ks7Gkr2hErWpf9gPXUYBEEvTR1eSkgACEru9QFoQaEnHzDUquaN7cSnq14Cxp48b9tu4EirRZ CU 8918 fee 2000000
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93861769 ≥ 93861731
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before open_pool; one finalized response, context 93861769 ≥ 93861731)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx seal_list + open_pool (XDEX initialize through the program): h2ezx6hsPK764SQkrZaWYukosdmJsMo1ykZYg2LuwXmtpkZQevNuFYZHsEbT4UiJbv6767mXxuzpjexziMaGy3C CU 183886 fee 6001500
+Test pool: BnPDoypibwqzC9DBNxCyucWAKEighLeNnW7TYaSj9t73 (LP mint 3dfWmnSm2Uzk8schAcxLU4XhQvPsgMVcGSofYu3YhfKF)
+PASS  phase open, t0 set  — t0 1794900874
+
+[3] XDEX gate
+PASS  pool state: 637 bytes, amm config, vaults, LP mint and mints as derived; deposit and withdraw enabled (status bits 0,1 clear)  — status 0
+PASS  pool reserves: 3 XNT and 6 000 tokens
+  tx wallet token accounts (test token, WXNT, LP): 5ACrUwN5VConJzM1aZxgCDZPsPn1gTFoxv822SnMCtEm6F7ur6p2RoKz8oavrb2PWH81ZjjQSeW7C2MdYpNzF1Nk CU 42323 fee 6000000
+  tx withdraw_unlocked (5% at t0): 2rm3f1GtmV61N4zZYUskJqZacR2FHVtj3V2gD3Ph4eGJ6nZKLWKdSG9ThUFEqXPBakJnHAUvMSKAoagsN285e14r CU 11542 fee 2000000
+PASS  5% of 60 000 tokens on the wallet
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93861779 ≥ 93861731
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before the gate XDEX deposit; one finalized response, context 93861779 ≥ 93861731)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx gate: wrap 0.06 XNT and direct XDEX deposit: 3m5YA18gF2YPuziZ9qSfHA9MWJUec488pJuh2nr5J12mxBGeVvqK816RfUdA2LxpjXkW8MqpSxwUU8xUK1SAHcG2 CU 20717 fee 3003000
+PASS  gate: LP received  — 2236067977
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93861782 ≥ 93861731
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before the gate XDEX withdrawal; one finalized response, context 93861782 ≥ 93861731)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx gate: XDEX withdraw 2236067977 LP: 2q6fvCiNu2LGKDo1YFtnzckA4H3kqufkni6fquoMEx6grNzauYat8CB2T9CK6V4pVVTDNibyGHe1wMUcWHW4Yco7 CU 20603 fee 3001500
+  gate: spent so far 4.9789 XNT (XNT in the WXNT account counted as held)
+PASS  gate: LP burned, both assets received (≥ 98% of pro rata)  — token0 49999999 (expected 49999999), token1 99999999978 (expected 99999999978)
+  tx gate: unwrap WXNT (close and recreate the WXNT account): 5ZagZPFXRTqUfTW559yPRTq8t8R7yUC5Tzt19M6s17NKXc7Zy9qC7nJ3WPyunh333tUGk1UF4MvzR1cdJmkAsULn CU 15223 fee 4000000
+PASS  gate: every landed transaction finalized with the observed outcome  — max finalized slot 93861820
+
+[4] position A — distribution source, lot 0, m 1
+  tx sync: 2SUMCcLULB2dEt4h8ECLmvvSBfrayHipDgb6TJoBQVsbzRcicNkw2TnTPrqqpSfEdrxPJ19VoKMNEdwAfKWJ9395 CU 9085 fee 2000000
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93861826 ≥ 93861820
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before position A; one finalized response, context 93861826 ≥ 93861820)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx create_position A (distribution): Nh2pH3jaMDJEBkhXNRx7S3CJnTFqLTKHfQVFU8WpSCiSxe654oCH5uD5s825YqzB2ndhNiuufZV4BxnKEA1VCPy CU 90545 fee 8001500
+PASS  A: Mass Asset object of the candidate, 200 bytes, owner = wallet, flags 1, directed = dist vault decrease  — directed 20099999993289
+Position A: 4qmGy8fsvqWMNJXXZxgPmCtDkuXZo2T3saFWG9TL64JR, redeem_at 1794901114
+  tx accrue_position A: 4Lj8dRFKkuzVxqeh4rdkXU6fKyJXPu1uY2cqUeEuMtz2oK3P14Kgw76qUuphrJWFu3VQbdty1V3kaf9Rj6khn9Kj CU 20996 fee 2000000
+  tx claim A: 337UM3wQ4XEBdLNWeyVTAumj1bZXLK39Ks5onG9iJMUiaai9PnCaPxJkkp8KeemSFiCxbiXtZS1v8yaEBm89jMDQ CU 26400 fee 2000000
+  waiting for chain time 1794901114 (213 s left)
+  waiting for chain time 1794901114 (180 s left)
+  waiting for chain time 1794901114 (147 s left)
+  waiting for chain time 1794901114 (115 s left)
+  waiting for chain time 1794901114 (82 s left)
+  waiting for chain time 1794901114 (49 s left)
+  waiting for chain time 1794901114 (16 s left)
+  tx A: sync (ledger at E0, calendar E2): 2qpxzzGuuH5mnMazk7UL5G3Z1RapiPc2LnoNfTCBpYnv53MJfNmrwuHdgCBu47FZK6jScswZosJP5kmqt8DHa15s CU 14182 fee 2000000
+  tx A: sync: 4o9kqsSyEXp9zECqzRUMH8Ugis59MgJJmtuP9vNxbYcNCELRCyyfS1buhj5Vvtqgs7dJKSemgw3Y4UCA8VNi6Nmb CU 9085 fee 2000000
+  tx A: accrue_position (position at 1794900901, ledger at 1794901116): 46tLvgkZroxninyR25Z2MNEno2mmzjoxfBDoEHqiakTtcJdeYbEBGxdYM4HosbKhdHJyxCjub2ApkJe3QrexGjit CU 21703 fee 2000000
+  tx redeem A (LP to the wallet): 2DYq6vSMXK6y7YPRVNDuwDToy4Sb3vAdUQCfETxT3smiykpHwxTa3xVEv5q2vDSvneWVCXiTKxK8GrSCgmf8FzhU CU 28676 fee 4001500
+PASS  A: asset consumed, LP on the wallet = position LP
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93862442 ≥ 93861820
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before the A XDEX withdrawal; one finalized response, context 93862442 ≥ 93861820)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx A: XDEX withdraw 449449663324 LP: 5KKuyorexERsNUSNbWfEWPgvR2CXYLJYNKrYU12QFSDLNS9YgoaPNXPg3CF43RY3DKmRqawiBuD8oE7qbCjytwc9 CU 20933 fee 3001500
+  A: spent so far 5.0099 XNT (XNT in the WXNT account counted as held)
+PASS  A: LP burned, both assets received (≥ 98% of pro rata)  — token0 10049999999 (expected 10049999999), token1 20099999993288 (expected 20099999993288)
+  tx A: unwrap WXNT (close and recreate the WXNT account): 4QtewjoqiGXvfXRHz1jjLJZxyZrMmETvWHtuSVUrXroDMTF9Wd3UkzZZoNPdG27UqK6r8R7vAhFqurm3pZFFsTeJ CU 15223 fee 4000000
+
+[5] position B — wallet source, lot 0, m 1
+  tx withdraw_unlocked (45% due): 2q1LpCLYESbYDar9GWsEWtQdgrkdJ2gYDzxHApgU7kYQbaAnXKQ2zdJaEYeXM7XqQHYkiHp9h1qm5PwkbiR9CB69 CU 11546 fee 2000000
+  tx sync: 4Az19vYmzrVYwnD2fpeFRBHUg2qiKWpEKbwvWRUF8TrAuu3tAMnBnnXKWnMn3N9nZ7nzYjmcscGuf53TnhfpqgNM CU 9084 fee 2000000
+PASS  wallet holds the tokens for B  — 27000012989533 ≥ 20300999986450
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93862454 ≥ 93861820
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before position B; one finalized response, context 93862454 ≥ 93861820)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx create_position B (wallet): 3VRGe6gJQeUYk81hnY3FtmzKqELNwfQaDQAqzFYDUzTJNin3nb3hc7V59Hj82TeGgkYFh2VHuLPbku1ccPj1U5uz CU 91084 fee 8001500
+PASS  B: Mass Asset object of the candidate, owner = wallet, flags 0
+Position B: Hc1Z55oFGdjEHo3vegftLCHkvYzLyez6Zcj7U5pVKeW1, redeem_at 1794901183
+  tx accrue_position B: 5geiNdpawRJQi12ss6gsPARTy7U12UJKejyE6EnpmZFufhrgman365jzCyXwUukHawrP12xKMceUu8amk59kpmQN CU 21089 fee 2000000
+  tx claim B: wj5t42YTmZM9jfAEmsi5f1tztXZxxTqA8ivwuee7ZVAv2mAmiB2jjYc6V7y1hHeiU3VmXEfKzBzDV5oGGBQKxCC CU 26490 fee 2000000
+  waiting for chain time 1794901183 (54 s left)
+  waiting for chain time 1794901183 (21 s left)
+  tx B: sync: 4KDEndUFTxwVFxx71w1UzFmXxqGrXu3Aqmi8RSSJCjxk62h17RSxq6wAEnKnxxwPgarxYRLqHHihyyLWPtwhV2Gd CU 9082 fee 2000000
+  tx B: accrue_position (position at 1794901129, ledger at 1794901185): PvcJUH6yR4Ywr6MC7MDo6rWgvSZDcEbRW6HaRtGsugJnBZX2GeT9x8nFj1TaSiqsnfBgPFPrqcy2DySTUw4ASnv CU 20629 fee 2000000
+  tx redeem B (LP to the wallet): 2eqThQXv4KbXhDAB1dvbWerBtvoP8wB8tt4tPMvaJmBMoATWR8yvscjDE4nGcddY49vC4ERTe6TRzzMgFSTKkhEe CU 29710 fee 4001500
+PASS  B: asset consumed, LP on the wallet = position LP
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93862632 ≥ 93861820
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (before the B XDEX withdrawal; one finalized response, context 93862632 ≥ 93861820)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  tx B: XDEX withdraw 449449663174 LP: 53n5QCj38FvG9KWq29C8ferDzkLXwuRWoq4W1teYvxfDphbJxAXsD1YpnPXyfijJsrZQbm2xyWxTki9UviE9KzNJ CU 20933 fee 3001500
+  B: spent so far 5.0409 XNT (XNT in the WXNT account counted as held)
+PASS  B: LP burned, both assets received (≥ 98% of pro rata)  — token0 10049999999 (expected 10049999999), token1 20099999986583 (expected 20099999986583)
+  tx B: unwrap WXNT (close and recreate the WXNT account): 3PobG38QZs6bjmipQYcEYzbA7F2YQEPjy6i7obWXj8cfiUEzbDxWqGRiuKMHLmXAArJp35bvHRMM2HFtSPXWw2Na CU 15223 fee 4000000
+
+[6] cleanup
+  tx burn the leftover test tokens; close the test token, LP and WXNT accounts (WXNT unwrapped): 4vgJJiSdhX9c1WhgzAWQ7Dm7aPJ65kn4EQ57aQBptpkng6MqyYhJ7Qk65GTf6jJMWViN8AYDijz6AKBR9E4s17JH CU 489 fee 8000000
+PASS  cleanup: every landed transaction finalized with the observed outcome  — max finalized slot 93862672
+  before closing the test program: finalized snapshot at context 93862676 ≥ 93862672
+PASS  before close: the test FLUX deployment of this run (bytecode = this run's build, upgrade authority = rehearsal wallet)  — programdata=Dz1Tyn5TorPmLUy122jM18PTFvYzUk8EAJUfbwJ6jRuK slot=93861731 authority=H648QrGsNNR8WNnrgnxHG2kaSqbSKAj86gju4so1Y86x 14d343d06d10c4397a3b9534de34eff6b3eee697b1feb88c4ebf6b379ead89b7
+PASS  before close: position 4qmGy8fsvqWMNJXXZxgPmCtDkuXZo2T3saFWG9TL64JR absent
+PASS  before close: position Hc1Z55oFGdjEHo3vegftLCHkvYzLyez6Zcj7U5pVKeW1 absent
+PASS  before close: program LP vault holds no LP  — 0
+  before close: all of the above from one finalized response, context 93862676 ≥ 93862672
+  tx close the test FLUX program (loader Close, rent to the wallet): 4d6Ap1F7zp2nk2EpNTuEHPrXcEjQQkKxs1Y9oya3HWzh1fbexVmzj3T3yQEBqtSFyY2L3GPQdr7zXNwknW6p6MWA CU 2370 fee 23700
+PASS  program close: every landed transaction finalized with the observed outcome  — max finalized slot 93862710
+  after closing the test program: finalized snapshot at context 93862714 ≥ 93862710
+PASS  test FLUX program closed (ProgramData absent at finalized)  — context 93862714
+Finalized: all 288 transactions
+Program deploy and close: own journaled loader transactions (buffer, writes, deploy, close), all counted above; no CLI step
+  XDEX snapshot (program, programdata, AMM config): finalized snapshot at context 93862714 ≥ 93862714
+PASS  XDEX bytecode = pin and AMM config byte-identical to the first check (end of run; one finalized response, context 93862714 ≥ 93862714)  — 8d9118e42b1f64f175f31b27d89c6b77e4ee26387b929ce468b0396ff56f813e; amm sha256 7e4dcbd7bc96bb830a0ad68d087fdadff98dc56b1ef6ca22917481f569415400
+  snapshot MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp: finalized snapshot at context 93862715 ≥ 93862714
+PASS  Mass Asset candidate unchanged (state and bytecode, finalized, context 93862715 ≥ 93862714 = max(highest finalized transaction slot 93862710, program-closed context 93862714))  — programdata=337gFTimc9Lvxa8wR3Pbh4R4ZRhEAWu6qpnFBAJDM7na slot=93853701 authority=6ECSj1h9QpgzBCpzjZPLJgwj66HS16BNmjckSWnZd952
+Mass Asset deployment: UNCHANGED
+Wallet: start 20.0000 XNT, end 16.7139 XNT, spent 3.2861 XNT (pool 3 XNT stays in the test pool)
+Left on chain for good: test pool BnPDoypibwqzC9DBNxCyucWAKEighLeNnW7TYaSj9t73 (3 XNT and burned initial LP), test token 5WV4J1DhoxzPn3nRY45erbC3wFXT6nSEZ8PLzgc5uuLa, FLUX program accounts (config, vaults) rent
+Unfinished-run marker removed: /home/sergey/.flux-rehearsal-locks/699a27d9a2598dba27bc9a37034a9d4e.unfinished.json
+
+=== FLUX MAINNET CHECK PASSED ===
+Saved: /home/sergey/flux1-contracts/prototype/flux-mainnet-check/evidence/rehearsal-20261117T073233Z-ba64b57c.log

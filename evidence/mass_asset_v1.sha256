@@ -1,0 +1,9 @@
+program:          mass_asset_v1
+repo:             https://github.com/ycnex4/mass-asset
+commit:           d209d04fbc80c172ad8413c3cbcbf904949e52e8
+release_build:    yes
+executable_hash:  88ff9a9c70bf6bef3c418eb81f75d9d8b2e927eaee1ab4c7485362fd09c9216c
+size_bytes:       53896
+solana_verify:    solana-verify 0.5.2
+base_image:       solanafoundation/solana-verifiable-build@sha256:0b4e3716fad9ca4b4aac3e3f977f43aad93a18c22296c0c0f44fc22e644bdd68
+built_at_utc:     2026-11-17T06:27:51Z

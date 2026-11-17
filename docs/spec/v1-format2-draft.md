@@ -1,7 +1,7 @@
 # Mass Asset v1 (format 2) — Specification
 
-**Status:** DRAFT 5, self-contained, published for review before the v1.0 release. Not deployed on mainnet. Preview builds (`v0.2`, `v0.3`, …) run on X1 testnet only.
-**Date:** 2026-11-15
+**Status:** **v1.0** — released and deployed immutable on X1 mainnet as `MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp` (finalized 2026-11-17; release evidence in `evidence/`). Self-contained. The text is draft 5 unchanged apart from this header and the program id in §0.1–0.2; the file keeps its name because the program sources refer to it.
+**Date:** 2026-11-17 (v1.0; draft 5 of 2026-11-15)
 **Network:** X1 (SVM)
 
 This document is normative on its own. It does not rely on the format-1 specification. The key words **MUST**, **MUST NOT**, **SHOULD** and **MAY** are to be interpreted as described in RFC 2119.
@@ -15,7 +15,7 @@ This document is normative on its own. It does not rely on the format-1 specific
 | Program id | Status | `version` | `HEADER_LEN` | Object seed | Authority seed |
 |---|---|---:|---:|---|---|
 | `MAssPQXuBXvvf196oXKFZ1GiC9kTsJJ8podQV3m72Wv` | format 1, "v0.1 preview", superseded, not for use | 1 | 72 | `mass-asset` | `mass-asset-authority` |
-| *to be published* | **format 2, Mass Asset v1** (this document) | 2 | 104 | `ma1-asset` | `mass-asset-authority` |
+| `MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp` | **format 2, Mass Asset v1** (this document), immutable | 2 | 104 | `ma1-asset` | `mass-asset-authority` |
 
 - An integrator identifies a format by the **pair** (account owner program id, `version`), never by `version` or by field offsets alone.
 - Different program ids already give disjoint PDA address spaces; the distinct object seed and `version` make the separation explicit.
@@ -25,7 +25,7 @@ This document is normative on its own. It does not rely on the format-1 specific
 
 | Name | Value |
 |---|---|
-| `MASS_ASSET_PROGRAM_ID` | the program id published for format 2 |
+| `MASS_ASSET_PROGRAM_ID` | `MAssXtCndQhigtQDDpwkwrUiSQbjT1jkkrXoXzZEtUp` (X1 mainnet) |
 | `VERSION` | `2` |
 | `HEADER_LEN` | `104` |
 | `MAX_PAYLOAD` | `1024` |
